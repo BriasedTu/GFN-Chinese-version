@@ -1,0 +1,955 @@
+\documentclass[UTF8,zihao=-4]{ctexart}
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{parskip}
+
+\setlength{\parindent}{0pt}
+\setlength{\LTpre}{0.8em}
+\setlength{\LTpost}{0.8em}
+
+\newenvironment{enblock}
+  {\par\smallskip\noindent{\scriptsize\bfseries English}\par\begin{quote}\small}
+  {\end{quote}}
+\newenvironment{zhblock}
+  {\par\noindent{\scriptsize\bfseries 中文}\par}
+  {\par\medskip}
+\newcommand{\gapnote}[1]{\par\smallskip\noindent\textit{[Source gap: #1]}\par\smallskip}
+\newcommand{\preservedimage}[1]{%
+  \IfFileExists{../chunks/images/#1}{%
+    \includegraphics[width=0.9\linewidth]{../chunks/images/#1}%
+  }{%
+    \fbox{\begin{minipage}{0.86\linewidth}\centering Missing source image preserved from OCR reference:\\\texttt{images/#1}\end{minipage}}%
+  }%
+}
+
+\title{Needham on Chinese Science and Sivin on the Scientific Revolution}
+\author{OCR cleanup and Chinese translation}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Needham: Chinese Scientific Terms, 五行, 阴阳, and 相关性思维}
+
+\gapnote{the chunk opens in the middle of a preceding discussion and with a partial Table 8. The table below keeps only the rows present in this file; ancient graph columns were too corrupt to restore safely.}
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.08\linewidth}
+                  >{\raggedright\arraybackslash}p{0.23\linewidth}
+                  >{\raggedright\arraybackslash}p{0.16\linewidth}
+                  >{\raggedright\arraybackslash}p{0.09\linewidth}
+                  >{\raggedright\arraybackslash}p{0.34\linewidth}}
+\caption{Table 8 excerpt: ideographs relevant to early Chinese scientific terminology / 表8节选：与早期中国科学术语有关的字形}\\
+\toprule
+No. & Word & Modern Chinese & K no. & Cleaned remarks / 说明 \\
+\midrule
+\endfirsthead
+\toprule
+No. & Word & Modern Chinese & K no. & Cleaned remarks / 说明 \\
+\midrule
+\endhead
+1a & affirmatory final particle & yeh / 也 & 4 & Possibly a cobra-like serpent, or the female external genitalia; the latter explanation was long accepted in Chinese tradition. / 可能取象于蛇，或取象于女阴；后说在中国传统中长期通行。\\
+1b & affirmatory verb-noun, ``to be'', existence & shih / 是 & 866c & Sun plus foot and other strokes, probably related to cheng / 正, suggesting what is visible and not illusory. / 日与足等笔画组合，或与“正”相关，指日下可见、非虚妄者。\\
+2a & negative particle, ``not'' & pu / 不 & 999 & A flower-head on a stalk with drooping leaves; probably a borrowed homophone. / 花蒂下垂之象，多半是假借同音字。\\
+2b & negative verb-noun, non-existence & fei / 非 & 579 & Traditionally explained through the lower part of fei / 飞, two wings or birds back to back. / 传统上与“飞”的下部相释，作两翼或两鸟背向之象。\\
+3 & different & i / 异 & 954 & A front-facing human figure with raised arms; perhaps linked with social difference and then otherness. / 正面人形举臂，或由社会差别引申为异、他者与差异。\\
+4 & like, similar to & ju / 如 & 94g & Woman and mouth radicals; an early phonetic loan, with no clear archaic scientific significance. / 女、口合成；很早的假借或形声用法，古义与科学术语关系不明。\\
+5 & if & jo / 若 & 777 & A kneeling person, perhaps gathering plants; likely a borrowed homophone. / 跪人采草之象，或许有关顺从义，但更可能是假借。\\
+6 & change, permutation & i / 易 & 850 & A lizard, with meaning derived from colour change or quick shifts of position. / 蜥蜴之象，义或取其变色与迅速移动。\\
+7 & gradual change, change of form & pien / 变 & 1780 & A later graph with silk hanks and a hand holding a stick, implying action and perhaps order from disorder. / 较晚之字，含丝与执杖之手，或寓由乱入治的动作。\\
+8 & sudden change, change of substance & hua / 化 & 19 & Connected in Needham's table with exchange and the generalized idea of transformation. / 与交换和由此推广的变化观念相关。\\
+9 & origin, first & yuan / 元 & 257 & A human figure in profile with emphasis on the head, hence first or beginning. / 侧身人形而突出头部，因而引申为首、始。\\
+10 & cause, to rely on, following & yin / 因 & 370 & A woven mat, hence a basis or something relied upon; the meaning extends from static to temporal. / 席纹之象，义为凭借、根据，由空间的凭依引申到时间的因循。\\
+11 & cause, reason, fact & ku / 故 & 49i & The ancient graph combines an old-object element with a hand holding a stick, suggesting prior action or precedent. / 古形含“古”意与执杖动作，指先事、先例。\\
+12 & make, do, act & wei / 为 & 27 & An elephant with a human hand on its trunk, symbolizing dexterity. / 象与手相连，寓灵巧操作。\\
+13 & begin & shih / 始 & 976 & A foetus and a woman; a beginning of beginnings. / 胎与女相合，表示发生之始。\\
+14 & go, move & hsing / 行 & 748 & A diagram of crossroads. / 十字道路之象。\\
+15 & go away, deprive, send away & chhü / 去 & 642 & A covered rice-basket; homophone borrowed for the present meaning. / 带盖食器之象，后假借为去。\\
+16 & come to, reach, attain & chih / 至 & 413 & An arrow reaching target or ground. / 箭至其的或至地之象。\\
+17 & stop & chih / 止 & 961 & A human foot. / 足形。\\
+18 & end, finished, exhausted & chin / 尽 & 381 & A hand cleaning out a vessel with a brush. / 手以刷清器之象，故有尽、竭之义。\\
+19 & true, truth, real & chen / 真 & 375 & A seal form probably implying full, filled up, or solid, opposed to empty or unreal. / 篆形义或为充实、坚实，与空虚不实相对。\\
+20 & above, ascend, hand up & shang / 上 & 726 & Geometrical pictograph. / 几何式指事。\\
+21 & below, descend, hand down & hsia / 下 & 35 & Geometrical pictograph. / 几何式指事。\\
+\bottomrule
+\end{longtable}
+
+\begin{enblock}
+There is a copious graphic vocabulary for study in the characters inscribed on Shang and Chou bronze vessels. Not all the characters have been identified, but enough exist to select ideographs that throw light on the origins of Chinese scientific terms. The ancient words probably had little influence on the thinking of the exponents of the proto-sciences in Ch'in and Han times, but for us they help us understand the ancient Chinese approach to science.
+\end{enblock}
+\begin{zhblock}
+商、周青铜器铭文也提供了大量可供研究的图形词汇。并非所有文字都已释读，但其中已经足以选出若干能够说明中国科学术语起源的表意字。那些古字很可能并未明显影响秦汉时期原始科学诸家的思想；可是对于今天的研究者来说，它们本身有助于理解古代中国接近科学问题的方式。
+\end{zhblock}
+
+\begin{enblock}
+A study of the table shows that the fundamental terms necessary for the beginnings of science were formed as one might expect from the principle of the ideograph. Only two of the terms here can be regarded as purely geometrical symbols; the rest are drawings of one kind or another. Some are borrowed homophones, and a few concern abstract ideas, but otherwise they depict natural objects, the human body and its parts, and human activities. What is most remarkable is that characters concerned with technology and communication are especially numerous. They demonstrate how ideographs developed from everyday life could later acquire abstract meanings, and how technical terminology for everyday thinking and experimentation actually arose.
+\end{enblock}
+\begin{zhblock}
+考察这张表可以看出，科学开端所需的基本术语，正如表意文字的原则所预示的那样形成。这里真正可以看作纯几何符号的只有少数，其余大多是各种摹写性的图形。有些是假借同音字，有几项涉及抽象概念；其余则描绘自然物、人体及其部位，以及人的活动。尤其值得注意的是，与技术和交流有关的字形数量最多。这说明日常生活中的图像文字如何逐渐获得抽象意义，也说明日常思考和实验活动中的技术术语如何实际产生。
+\end{zhblock}
+
+\gapnote{the printed source omits intervening pages here.}
+
+\subsection*{The Stabilised Five-Element Theory / 定型化的五行学说}
+
+\begin{enblock}
+We are now in a position to consider the Five-Element theory as it was finalised in Han times and handed down to later ages. Two aspects merit special attention: the Enumeration Orders and the Symbolic Correlations. The Enumeration Orders are the orders in which the five elements were named in ancient and medieval presentations of the subject. They were not always the same, but the four most important were as follows.
+\end{enblock}
+\begin{zhblock}
+现在可以考察汉代定型、并传之后世的五行学说。尤其值得注意的是两个方面：五行的排列次序，以及象征性相关系统。所谓排列次序，是古代和中古关于五行的论述中列举五行的顺序。它们并不总是相同，但最重要的四种如下。
+\end{zhblock}
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.1\linewidth}
+                  >{\raggedright\arraybackslash}p{0.34\linewidth}
+                  >{\centering\arraybackslash}p{0.08\linewidth}
+                  >{\centering\arraybackslash}p{0.08\linewidth}
+                  >{\centering\arraybackslash}p{0.08\linewidth}
+                  >{\centering\arraybackslash}p{0.08\linewidth}
+                  >{\centering\arraybackslash}p{0.08\linewidth}}
+\caption{Main Five-Element orders / 五行主要次序}\\
+\toprule
+i & Cosmogonic Order / 宇宙生成序 & Water / 水 & Fire / 火 & Wood / 木 & Metal / 金 & Earth / 土\\
+ii & Mutual Production Order / 相生序 & Wood / 木 & Fire / 火 & Earth / 土 & Metal / 金 & Water / 水\\
+iii & Mutual Conquest Order / 相胜（相克）序 & Wood / 木 & Metal / 金 & Fire / 火 & Water / 水 & Earth / 土\\
+iv & ``Modern'' Order / “现代”口传序 & Metal / 金 & Wood / 木 & Water / 水 & Fire / 火 & Earth / 土\\
+\bottomrule
+\end{longtable}
+
+\begin{enblock}
+The Cosmogonic Order was the order in which the elements were supposed to have come into being. It begins with Water, echoing the recurrent Chinese emphasis on Water as the primeval element. The Mutual Production Order gave the seasons in correct order, beginning with Wood for spring and Water for winter, with Earth corresponding to an interval between summer and autumn.
+\end{enblock}
+\begin{zhblock}
+宇宙生成序是设想五行产生的顺序。它以水为首，呼应了中国文献中不断出现的、以水为太初元素的强调。相生序则以正确的季节顺序呈现五行：木为春，水为冬，土对应夏秋之间的过渡月份。
+\end{zhblock}
+
+\begin{enblock}
+The Mutual Conquest Order described the series in which each element was supposed to conquer its predecessor. It was associated with the teaching of Tsou Yen, and was based on everyday observations: Wood conquers Earth because a wooden spade digs earth; Metal conquers Wood because it cuts and carves it; Fire conquers Metal because it melts it; Water conquers Fire because it extinguishes it; Earth conquers Water because it dams and contains it. This order was also politically significant, offering an explanation of historical succession and therefore a tool for prediction. The ``Modern'' Order is obscure in significance, but it survives in colloquial Chinese as the familiar sequence Metal, Wood, Water, Fire, Earth.
+\end{enblock}
+\begin{zhblock}
+相胜序描述每一行克制前一行的系列。它与邹衍的学说相联系，并以日常经验为根据：木胜土，因为木锹可以掘土；金胜木，因为金属可以砍削木材；火胜金，因为火能熔化金属；水胜火，因为水能灭火；土胜水，因为土能筑坝蓄水。对于重视灌溉和水利工程的人们来说，这是一种十分自然的比喻。这个次序还具有政治意义，被用来解释历史进程，并暗示它将继续适用于未来，因而可供预测。至于“现代”序，其意义较为晦暗，但“金、木、水、火、土”这一顺序已经进入汉语口语和童谣。
+\end{zhblock}
+
+\begin{enblock}
+Two secondary principles in the Enumeration Orders concern the rate of change: the Principles of Control and Masking. The Principle of Control derives from the Mutual Conquest Order. A process of conquest is said to be controlled by the element that conquers the conqueror. Thus Metal conquers Wood but Fire controls the process; Fire conquers Metal but Water controls the process, and so on. Although used in fate-calculation, the Chinese were following logical paths of thought that modern experimental science has found applicable in fields such as ecology.
+\end{enblock}
+\begin{zhblock}
+这些排列次序还牵涉两个关于变化速度的次级原则：控制原则和遮蔽原则。控制原则来自相胜序：某一克制过程由能够克制“克制者”的那一行所控制。例如金克木，而火控制这个过程；火克金，而水控制这个过程，如此类推。这个观念曾用于命算，但中国思想家所循的逻辑道路，在现代实验科学的若干领域中确有可比的应用，例如生态平衡中捕食者与被捕食者的数量关系。
+\end{zhblock}
+
+\begin{enblock}
+One might criticize the Chinese principle of control by saying that in a cyclic process nothing could ever happen, since every element always inhibits another. But the Chinese did not suppose that all elements were effectively present everywhere at the same time. When the Mutual Production Order is related to the Mutual Conquest Order, the controlling element is always the one produced by the conquered element, and the system can continue. Wood conquers Earth in a process controlled by Metal, but Metal is produced by Earth, so feedback is built in.
+\end{enblock}
+\begin{zhblock}
+有人或许会批评中国的控制原则：如果这是一个循环过程，那么一切都不可能发生，因为每一行总会抑制另一行。可是中国人并不认为所有五行在任何地方、任何时候都同样有效地同时在场。若把相生序与相胜序联系起来，就会发现控制者总是由被克者所生，系统因而能够继续运行。木克土而由金控制，但金又为土所生，于是反馈关系已经包含其中。
+\end{zhblock}
+
+\begin{enblock}
+This idea could have social consequences, as when Confucians used it to prove that a son had the right to take revenge on his father's enemy. But its primary connotations were scientific. The idea that something acting on something else destroys it and is itself changed or destroyed in the process was known in ancient alchemy. It is also familiar in modern chemistry, for example when a reaction stops because reaction products accumulate; biochemistry offers even stronger examples.
+\end{enblock}
+\begin{zhblock}
+这一观念也可能产生社会后果，例如儒家曾用它证明儿子有权为父复仇。但它的主要含义仍属科学性的。某物作用于他物、毁坏他物，同时又因这种作用而自身发生变化乃至毁坏，这一想法在古代炼金术中已经存在。现代化学同样熟悉这种情形，例如反应产物积累导致化学反应停止；生物化学中还有更有力的例证。
+\end{zhblock}
+
+\begin{enblock}
+The Principle of Masking depends on both the Mutual Production and the Mutual Conquest Orders. It refers to the masking of a process of change by another process that creates more of the material than is being destroyed, or creates it faster. Wood destroys Earth, but Fire masks the process, since Fire destroys Wood and makes Earth, ash, faster than Wood can destroy Earth. Modern biological and ecological examples are easy to find.
+\end{enblock}
+\begin{zhblock}
+遮蔽原则同时依赖相生序和相胜序。它指一种变化过程被另一种过程所遮蔽：后者生成的材料多于前者所毁坏的材料，或生成速度更快。木毁土，但火遮蔽这个过程，因为火能毁木并产生土，也就是灰，而且其速度快于木毁土。现代生物学和生态学中也可以找到类似例子。
+\end{zhblock}
+
+\begin{enblock}
+In both principles a strong quantitative element lurks: the conclusions depend on quantities, speeds, and rates. This may have arisen from questions raised by the Enumeration Orders themselves. The early Chinese thinkers were not simply satisfied with them. The Mo Ching preserves a fragment of late Mohist criticism of the Naturalists: the Five Elements do not perpetually overcome one another. Fire naturally melts Metal if there is enough Fire; Metal can pulverise a burning fire to cinders if there is enough Metal. Metal stores Water but does not produce it; Fire attaches itself to Wood but is not produced from it.
+\end{enblock}
+\begin{zhblock}
+在这两个原则中都潜藏着强烈的数量因素：结论取决于数量、速度和速率。这也许正来自排列次序本身所提出的问题，因为早期中国思想家并未满足于这些次序。《墨经》保存了后期墨家批评阴阳家的片段：五行并非永远相胜。只要火足够多，火自然熔金；只要金足够多，金也可把燃烧的火压成灰烬。金可以盛水，却不生水；火附着于木，却不由木生。
+\end{zhblock}
+
+\begin{enblock}
+This attack on Tsou Yen's Mutual Conquest theory may have been a retort to his attitude toward the logical studies of the Mohist schools, but it remains interesting as a demonstration of the quantitative approach in Mohist scientific thinking.
+\end{enblock}
+\begin{zhblock}
+这种对邹衍相胜说的攻击，也许是对他轻视墨家逻辑研究的一种反击；但无论如何，它作为墨家科学思维中数量化取向的证据，仍然十分有趣。
+\end{zhblock}
+
+\subsection*{The Symbolic Correlations / 象征性相关}
+
+\begin{enblock}
+The Five Elements gradually came to be associated with every conceivable category of things in the universe that could be classified in fives. Table 9 sets forth a selection.
+\end{enblock}
+\begin{zhblock}
+五行逐渐同宇宙中一切可以分成五类的事物类别相联系。表9只列出其中一部分。
+\end{zhblock}
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.12\linewidth}
+                  >{\raggedright\arraybackslash}p{0.12\linewidth}
+                  >{\raggedright\arraybackslash}p{0.12\linewidth}
+                  >{\raggedright\arraybackslash}p{0.12\linewidth}
+                  >{\raggedright\arraybackslash}p{0.12\linewidth}
+                  >{\raggedright\arraybackslash}p{0.15\linewidth}
+                  >{\raggedright\arraybackslash}p{0.16\linewidth}
+                  >{\raggedright\arraybackslash}p{0.06\linewidth}}
+\caption{Table 9a: symbolic correlations / 表9a：五行象征性相关}\\
+\toprule
+Element / 行 & Season / 时 & Direction / 方 & Taste / 味 & Smell / 臭 & Stems / 干 & Branches and animals / 支与动物 & Number / 数\\
+\midrule
+Wood / 木 & spring / 春 & east / 东 & sour / 酸 & goatish / 膻 & jia, yi / 甲乙 & yin tiger, mao hare / 寅虎、卯兔 & 8\\
+Fire / 火 & summer / 夏 & south / 南 & bitter / 苦 & burning / 焦 & bing, ding / 丙丁 & wu horse, si serpent / 午马、巳蛇 & 7\\
+Earth / 土 & sixth month or centre / 季夏或中央 & centre / 中 & sweet / 甘 & fragrant / 香 & wu, ji / 戊己 & xu dog, chou ox, wei sheep, chen dragon / 戌犬、丑牛、未羊、辰龙 & 5\\
+Metal / 金 & autumn / 秋 & west / 西 & acrid / 辛 & rank / 腥 & geng, xin / 庚辛 & you cock, shen monkey / 酉鸡、申猴 & 9\\
+Water / 水 & winter / 冬 & north / 北 & salty / 咸 & rotten / 腐 & ren, gui / 壬癸 & hai boar, zi rat / 亥豕、子鼠 & 6\\
+\bottomrule
+\end{longtable}
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.12\linewidth}
+                  >{\raggedright\arraybackslash}p{0.14\linewidth}
+                  >{\raggedright\arraybackslash}p{0.12\linewidth}
+                  >{\raggedright\arraybackslash}p{0.15\linewidth}
+                  >{\raggedright\arraybackslash}p{0.13\linewidth}
+                  >{\raggedright\arraybackslash}p{0.12\linewidth}
+                  >{\raggedright\arraybackslash}p{0.11\linewidth}
+                  >{\raggedright\arraybackslash}p{0.09\linewidth}}
+\caption{Table 9b: astronomical and political correlations / 表9b：天文与政治相关}\\
+\toprule
+Element / 行 & Musical note / 音 & Mansions / 宿 & Star palace / 宫 & Heavenly body / 天体 & Planet / 星 & Weather / 气象 & Colour / 色\\
+\midrule
+Wood / 木 & jiao / 角 & 1--7 & Azure Dragon / 青龙 & stars / 星 & Jupiter / 木星 & wind / 风 & green / 青\\
+Fire / 火 & zhi / 徵 & 22--28 & Vermilion Bird / 朱雀 & sun / 日 & Mars / 火星 & heat / 热 & red / 赤\\
+Earth / 土 & gong / 宫 & -- & Yellow Dragon / 黄龙 & earth / 地 & Saturn / 土星 & thunder / 雷 & yellow / 黄\\
+Metal / 金 & shang / 商 & 15--21 & White Tiger / 白虎 & constellations / 宿 & Venus / 金星 & cold / 寒 & white / 白\\
+Water / 水 & yu / 羽 & 8--14 & Sombre Warrior / 玄武 & moon / 月 & Mercury / 水星 & rain / 雨 & black / 黑\\
+\bottomrule
+\end{longtable}
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.11\linewidth}
+                  >{\raggedright\arraybackslash}p{0.15\linewidth}
+                  >{\raggedright\arraybackslash}p{0.13\linewidth}
+                  >{\raggedright\arraybackslash}p{0.12\linewidth}
+                  >{\raggedright\arraybackslash}p{0.12\linewidth}
+                  >{\raggedright\arraybackslash}p{0.12\linewidth}
+                  >{\raggedright\arraybackslash}p{0.13\linewidth}
+                  >{\raggedright\arraybackslash}p{0.09\linewidth}}
+\caption{Table 9c: bodily, agricultural, and ritual correlations / 表9c：身体、农事与礼仪相关}\\
+\toprule
+Element / 行 & Living class / 虫类 & Domestic animal / 牲 & Grain / 谷 & Sacrifice / 祭处 & Viscus / 脏 & Body part / 体 & Affect / 志\\
+\midrule
+Wood / 木 & scaly, fishes / 鳞类 & sheep / 羊 & wheat / 麦 & inner door / 户内 & spleen / 脾 & muscles / 筋 & anger / 怒\\
+Fire / 火 & feathered, birds / 羽类 & fowl / 鸡 & beans / 豆 & hearth / 灶 & lungs / 肺 & pulse, blood / 脉血 & joy / 喜\\
+Earth / 土 & naked, man / 倮类 & ox / 牛 & panicled millet / 稷 & inner court / 中庭 & heart / 心 & flesh / 肉 & desire / 欲\\
+Metal / 金 & hairy, mammals / 毛类 & dog / 犬 & hemp / 麻 & outer door / 门外 & kidney / 肾 & skin and hair / 皮毛 & sorrow / 悲\\
+Water / 水 & shell-covered / 介类 & pig / 豕 & millet / 黍 & well / 井 & liver / 肝 & bones, marrow / 骨髓 & fear / 恐\\
+\bottomrule
+\end{longtable}
+
+\begin{enblock}
+Careful analysis suggests that different groups of correlations were compiled by different groups of scholars. The astronomical group may go back to the ninth century B.C., though it shows the hand of the fourth-century astronomer Kan Te and probably the later astrologer Kan Chung-k'o. Then there were Naturalist groups associated with Tsou Yen, including the Yin-Yang group and the human psycho-physical functions. Finally, two groups are of particular scientific interest, one agricultural and one medical.
+\end{enblock}
+\begin{zhblock}
+细加分析可以看出，不同组的相关系统很可能由不同学者群体编成。天文组也许早到公元前九世纪，尽管它显示出公元前四世纪天文学家甘德的影响，也可能受到后来的星占家甘忠可影响。随后是与邹衍相关的阴阳家配属，包括阴阳组以及人的心理-生理功能组。最后还有两组尤其具有科学史意义：一组主要关乎农业，一组主要关乎医学。
+\end{zhblock}
+
+\begin{enblock}
+A striking point about the agricultural groups is that rice is absent from their lists of grains, although it appears in a medical group not reproduced here. This suggests that the agricultural correlations arose in northern China, or at an earlier date. Medical philosophers from very early times also had sixfold series complementing or replacing the fivefold series of scientific thinkers: six Yang organs, six Yin organs, and many analogous classifications.
+\end{enblock}
+\begin{zhblock}
+农业组一个引人注意之处，是谷物表中没有稻，尽管稻出现在这里未列出的医学组中。这大概说明农业相关系统起源于中国北方，或者年代较早。医学思想家也很早就有六分系列，用来补充或替代科学思想家的五分系列：人体有六个阳腑、六个阴脏，医学中还可见许多类似分类。
+\end{zhblock}
+
+\begin{enblock}
+These correlations were criticized because they led to absurdities. Wang Ch'ung pointed out in the first century A.D. that if yin corresponds to Wood and the tiger, while xu, chou, and wei correspond to Earth and to dog, ox, and sheep, then Wood conquering Earth would imply that the tiger overcomes the dog, ox, and sheep. If Water conquers Fire, why do rats not normally attack horses and drive them away? If Metal conquers Wood, why do cocks not devour hares?
+\end{enblock}
+\begin{zhblock}
+这些相关系统曾遭到批评，因为它们会导出荒谬结论。公元一世纪的王充指出：若寅属木而配虎，戌、丑、未属土而配犬、牛、羊，那么木胜土就意味着虎胜犬、牛、羊。若水胜火，为什么鼠不常常攻击并赶走马？若金胜木，为什么鸡不吞食兔？
+\end{zhblock}
+
+\begin{enblock}
+This criticism belonged to the Chinese skeptical tradition. Yet despite such attacks, these correlations seem at first to have helped scientific thought in China. They were no worse than the Greek theory of elements that dominated medieval Europe. They became harmful only when they grew over-elaborate and fanciful, too far removed from the observation of Nature.
+\end{enblock}
+\begin{zhblock}
+这种批评属于中国怀疑论传统。可是尽管有这类攻击，在早期这些相关系统似乎确曾有助于中国的科学思维。它们并不比支配欧洲中世纪思想的希腊元素说更糟。只有当它们变得过度繁复、流于幻想、并且离自然观察太远时，才产生真正的危害。
+\end{zhblock}
+
+\begin{enblock}
+As a positive example, Shen Kua's Dream Pool Essays records that in Qianshan, Xinzhou, a bitter spring forms a stream at the bottom of a gorge. When the water is heated it becomes tan fan, bitter alum, probably impure copper sulphate. When heated, this gives copper; if the alum is heated for a long time in an iron pan, the pan changes to copper. Shen Kua concluded that Water can be transformed into Metal.
+\end{enblock}
+\begin{zhblock}
+作为正面例子，沈括《梦溪笔谈》记载：信州铅山县有苦泉，自峡谷底成溪。其水加热后成为胆矾，即苦矾，很可能是不纯的硫酸铜；胆矾再经加热可得铜；若在铁锅中久煎，铁锅会变成铜色。沈括由此认为水可以转化为金，这是一种异常的物质变化。
+\end{zhblock}
+
+\begin{enblock}
+Shen Kua did not understand chemical change in the modern sense; like others of his time, he was dominated by Five-Element theory. But his observation is probably the earliest record in any language of metallic copper precipitated by iron, with the formation of iron sulphate.
+\end{enblock}
+\begin{zhblock}
+沈括当然没有现代意义上的化学变化概念；和同时代人一样，他受五行理论支配。然而他的描述显示他是一位卓越的观察者，并且很可能是任何语言中关于铁置换出金属铜、并形成硫酸亚铁的最早记录。
+\end{zhblock}
+
+\subsection*{Numerology and Scientific Thinking / 数术与科学思维}
+
+\begin{enblock}
+Before leaving the Five-Element system, two examples of Chinese naturalistic thinking must be mentioned. Both are in the Ta Tai Li Chi, compiled between A.D. 85 and 105, though the quoted passages probably date from the second century B.C. In the first, Tseng Tzu explains that Heaven's Way is round and Earth's Way square. The bright radiates ch'i and the dark imbibes ch'i; Fire and the Sun have external brightness, while Metal and Water have internal brightness. The Yang is active and the Yin reactive.
+\end{enblock}
+\begin{zhblock}
+在离开五行系统之前，还须提到中国自然主义思维的两个重要例子。二者都见于《大戴礼记》；该书成编于公元85至105年间，但所引文字大概可追溯到公元前二世纪。第一段中，曾子解释说天道圆、地道方；明者放射气，暗者吸纳气；火与日有外在之明，金与水有内在之明。因此阳主动，阴反应。
+\end{zhblock}
+
+\begin{enblock}
+The passage continues: the seminal essence of Yang is called shen, and the germinal essence of Yin is called ling. Shen and ling are the roots of all living creatures and the ancestors of ritual, music, human-heartedness, righteousness, good and evil, order and disorder. When Yin and Yang keep their proper positions, there is quiet and peace. Hairy and feathered animals are born of Yang; animals with shells and scales are born of Yin; man alone is born naked because he has the balanced essences of both Yang and Yin.
+\end{enblock}
+\begin{zhblock}
+这段文字继续说：阳之精称为神，阴之精称为灵。神与灵是一切生物的根本，也是礼乐、仁义、善恶、治乱等高级发展的祖先。阴阳各安其位，则安静太平。毛类与羽类动物由阳而生，介类与鳞类动物由阴而生；唯有人生而裸露，因为人兼具阴阳二气的平衡精华。
+\end{zhblock}
+
+\begin{enblock}
+Needham stresses that calling the Sage the highest representative of naked animals is a supreme example of Chinese thought refusing to separate man from Nature, or individual man from social man. The passage also expresses the view that the basic forces at work in lower creatures are the same forces that, at higher levels, develop the highest forms of human social and ethical life.
+\end{enblock}
+\begin{zhblock}
+李约瑟强调，把圣人称为裸虫的最高代表，极好地说明中国思想拒绝把人与自然分离，也拒绝把个人之人与社会之人分离。此段还表达了一种观点：在最低等生物中起作用的基本力量，与在较高层次上发展成人类社会生活和伦理生活最高形态的力量，是同一类力量。
+\end{zhblock}
+
+\begin{enblock}
+The second passage is almost entirely biological, but its observations are fitted into number mysticism. Heaven is 1, Earth 2, Man 3; \(3 \times 3 = 9\), \(9 \times 9 = 81\). The Sun's number is 10, so man is born in the tenth month. Other multiplications are used to explain gestation periods of horses and dogs. The passage also classifies birds, fishes, silkworms, cicadas, gnats, scaled animals, shell-covered animals, birds, and mammals by habits, openings of the body, egg-laying, and nourishment in the womb.
+\end{enblock}
+\begin{zhblock}
+第二段几乎完全是生物学性的，但其观察被纳入数字神秘主义框架。天为一，地为二，人为三；三三为九，九九八十一。日之数为十，所以人十月而生。其他乘数又被用来解释马、犬等动物的妊娠期。该段还按习性、身体孔窍、卵生与胎养等标准，分类叙述鸟、鱼、蚕、蝉、蜉蝣、鳞介动物、鸟类与哺乳动物。
+\end{zhblock}
+
+\begin{enblock}
+The Naturalists were close observers of Nature, but their observations were fitted into number mysticism. Such mysticism appears already in the symbolic correlations and remained active as late as the twelfth century A.D.; it must be taken into account in any assessment of Chinese scientific ideas.
+\end{enblock}
+\begin{zhblock}
+阴阳家，或者写下这些文字的人，显然善于观察自然；但他们把观察纳入数术框架。这种数字神秘主义已经见于象征性相关表，并且直到公元十二世纪仍有影响；评价中国科学观念时，必须把这一点纳入考虑。
+\end{zhblock}
+
+\subsection*{The Theory of the Two Fundamental Forces / 阴阳二气理论}
+
+\begin{enblock}
+Needham turns next to the two fundamental forces, Yin and Yang. We know less about them than about the Five Elements. They do not appear in surviving fragments of Tsou Yen, though his school was called the Yin-Yang Chia and later books usually credited their discussion to him. Their philosophical use probably began at the start of the fourth century B.C.; older passages that use them are likely interpolations.
+\end{enblock}
+\begin{zhblock}
+李约瑟随后转向两种基本力量，即阴阳。相对于五行，我们对阴阳早期形态所知较少。现存邹衍残篇并不见阴阳二词，尽管他的学派被称为阴阳家，后世典籍也常把阴阳论归于他。阴阳作为哲学术语的使用大概始于公元前四世纪初；更早文本中出现的相关段落很可能是后人插入。
+\end{zhblock}
+
+\begin{enblock}
+The Chinese characters for Yin and Yang are connected with darkness and light. Yin evokes cold, cloud, rain, femaleness, interiority, and darkness. Yang evokes sunshine, warmth, spring and summer, maleness, and brightness. They also had factual meanings: Yin was the shady side of a mountain or valley; Yang was the sunny side.
+\end{enblock}
+\begin{zhblock}
+阴、阳二字与暗和明有关。阴唤起寒冷、云、雨、雌性、内部以及幽暗等观念；阳唤起日光、温暖、春夏、雄性与明亮等观念。它们也有更具事实性的意义：阴指山或谷的背阴面，阳指向阳面。
+\end{zhblock}
+
+\begin{enblock}
+As philosophical terms they appear explicitly in the third-century B.C. appendices to the I Ching. There the universe is said to contain two fundamental forces or operations, one now dominating and then the other, in wave-like succession. The Mo Tzu and the Tao Te Ching also contain early references to the harmony of Yin and Yang.
+\end{enblock}
+\begin{zhblock}
+作为哲学术语，阴阳在公元前三世纪《易经》附传中有明确用法。其意大致是：宇宙中只有两种基本力量或作用，它们此起彼伏，像波动一样交替占优。《墨子》和《道德经》也有关于阴阳和合的早期表述。
+\end{zhblock}
+
+\begin{enblock}
+In the second century B.C., Tung Chung-shu wrote that Heaven has Yin and Yang, and so does man. When the Yin ch'i of Heaven and Earth begins to dominate, the Yin ch'i of man responds; if the Yin ch'i of man advances, the Yin ch'i of Heaven and Earth must also respond. Their Tao is one. To bring rain, Yin must be activated; to stop rain, Yang must be activated.
+\end{enblock}
+\begin{zhblock}
+到公元前二世纪，董仲舒写道：天有阴阳，人亦有阴阳。天地之阴气开始占优，人之阴气也相应为先；若人之阴气先行，天地之阴气也应当随之兴起。其道为一。欲求雨，须发动阴；欲止雨，须发动阳。
+\end{zhblock}
+
+\begin{enblock}
+The I Ching contains sixty-four hexagrams, each composed of six whole or broken lines corresponding to Yang and Yin. Figure 23 shows how Yang splits into two, then four, then eight, until sixty-four alternations exist. The process could continue indefinitely. Yin and Yang never become completely separated; at each stage, in any fragment, only one is manifest. Needham notes a scientific interest here: the repeated splitting of two factors, with one dominant and one recessive, has parallels in modern genetics.
+\end{enblock}
+\begin{zhblock}
+《易经》有六十四卦，每卦由六爻组成，爻或整或断，分别对应阳与阴。图23显示阳如何分为二、再分为四、再分为八，直至形成六十四种交替。这个过程原则上可以无限继续。阴阳从未完全分离；在每一阶段、每一片段中，只有一方显现。李约瑟指出，这里具有科学史意义：两个因素反复分裂，其中一方显性、一方隐性，这与现代遗传学中的若干思路有相似之处。
+\end{zhblock}
+
+\begin{figure}[htbp]
+\centering
+\preservedimage{cd03d8e58d264dd5693c5d23747232e6341e7bbc70ec126811e0481af5645590.jpg}
+\caption{Segregation table of the symbols of the Book of Changes, from Zhu Xi's twelfth-century \emph{Zhouyi benyi tushuo}. / 《易》象分化图，出自朱熹十二世纪《周易本义图说》。}
+\end{figure}
+
+\subsection*{``Associative'' Thinking and Its Significance / 相关性思维及其意义}
+
+\begin{enblock}
+Chinese scientific ideas involved two fundamental principles: the Two Forces, Yin and Yang, and the Five Elements. The Two Forces were derived from negative and positive projections of human sexual experience, while the Five Elements were believed to lie behind every substance and process. Everything in the universe that could be arranged in fives was correlated with the Five Elements; whatever could not fit that pattern belonged to other numerical orders such as fours, nines, or twenty-eights. This wider approach gave rise to number mysticism.
+\end{enblock}
+\begin{zhblock}
+中国的科学观念包含两项基本原则：阴阳二气与五行。阴阳二气在根本上来自人类性经验的负、正投射；五行则被认为居于每一种物质与每一类过程的背后。宇宙中凡可分成五类者，都被配属到五行之中；凡不能归入五分框架者，则进入四、九、二十八等其他数目秩序。这个更广的取向产生了数字神秘主义。
+\end{zhblock}
+
+\begin{enblock}
+Many European observers dismissed this number mysticism as superstition and claimed that it prevented true scientific thinking in China. Needham asks instead whether the traditional thought-system was merely superstition, merely primitive thought, or something characteristic of the civilization that produced it, and whether it contributed something positive to other civilizations.
+\end{enblock}
+\begin{zhblock}
+许多欧洲观察者把这种数术视为纯粹迷信，并声称它阻碍了中国真正科学思维的兴起。李约瑟的问题则不同：传统思想体系究竟只是迷信、只是原始思维，还是产生它的文明所特有的某种思维形式？如果是后者，它是否也为其他文明提供了积极贡献？
+\end{zhblock}
+
+\begin{enblock}
+Primitive magic has often been said to operate through two ``laws'': similarity, by which like produces like, and contagion, by which things once in contact continue to act on one another. These are precisely the kinds of laws behind Chinese correlations or associations. Their motive was magical, but that need not disturb us, since magic nourished early science. Magic tends toward the concrete and factual; it deals with reality and serves ordinary people through operations that resemble techniques.
+\end{enblock}
+\begin{zhblock}
+对原始巫术的研究常说，它依据两条“法则”运作：相似律，即同类产生同类；接触律，即曾经接触过的事物即使分离后仍继续互相作用。中国的相关或配属系统背后，正是这类“法则”。其动机带有巫术性，但这并不必使我们不安，因为早期正是巫术滋养了科学。巫术趋向具体、事实，处理现实，并以类似技术操作的方式服务普通人。
+\end{zhblock}
+
+\begin{enblock}
+Because of this practical emphasis, symbolic correlations were what a magician needed: they brought order to things when no one could know which conditions would bring success in magical or experimental procedures. If one experimented with water, it seemed logical not to wear red, the colour of fire. Such associations may have been intuitive, but at the time what else could they be?
+\end{enblock}
+\begin{zhblock}
+正因这种实践取向，象征性相关系统正是术士所需要的东西：在无人确知何种条件会使命术或实验程序成功时，它为事物带来秩序。如果某人用水做实验或施术，那么不穿火之色的红衣就显得合乎逻辑。这类联想也许更多出于直觉，但在当时又还能是什么呢？
+\end{zhblock}
+
+\begin{enblock}
+Modern scholars have called this mental approach ``associative thinking'' or ``co-ordinative thinking.'' It works by association and intuition, and has its own logic and laws of cause and effect. It is not mere superstition, though it differs from modern scientific thinking, where emphasis falls on external causes. It classifies ideas not in hierarchical ranks but side by side in a pattern. Things influence one another not mechanically, but by a kind of induction effect.
+\end{enblock}
+\begin{zhblock}
+现代学者把这种心智取向称为“相关性思维”或“协调性思维”。它凭联想和直觉运作，并有自身的逻辑与因果法则。它并非单纯迷信，尽管它不同于强调外在原因的现代科学思维。它不是把观念排列成等级序列，而是把它们并置于一种图式之中。事物彼此影响，并不是通过机械原因，而是通过某种感应作用。
+\end{zhblock}
+
+\begin{enblock}
+In this Chinese thought, the key words are Order and Pattern, or perhaps Organism. Symbolic correlations, correspondences, and the hexagrams of the I Ching formed part of one gigantic whole. Things behaved as they did not necessarily because of prior actions, but because their position in the cyclical universe endowed them with intrinsic natures. Their existence depended on the whole world-organism, and they reacted on one another by mysterious resonance.
+\end{enblock}
+\begin{zhblock}
+在这里所讨论的中国思想中，关键词是秩序与图式，或者几乎可以说只有一个关键词：有机体。象征性相关、对应关系以及《易经》卦象，都是一个巨大整体的组成部分。事物以特定方式行动，并不一定因为此前其他事物的作用，而首先因为它们在不断变化的循环宇宙中所处的位置，使它们具有内在本性。它们的存在依赖整个世界有机体，并通过神秘的共振相互反应。
+\end{zhblock}
+
+\begin{enblock}
+Tung Chung-shu expressed this in the Ch'un Ch'iu Fan Lu, in a chapter titled ``Things of the Same Genus Energise Each Other.'' Water poured on level ground avoids dry places and moves toward wet ones; fire avoids damp wood and ignites dry wood. Things reject what differs and follow what is akin. If ch'i are similar, they coalesce; if musical notes correspond, they resonate. The gong or shang note struck on one lute is answered by the same note on another instrument.
+\end{enblock}
+\begin{zhblock}
+董仲舒在《春秋繁露》“同类相动”篇中最能表达这一点。水倾于平地，会避开干处而趋向湿处；火遇两块相同木柴，会避开湿者而燃着干者。万物排斥异类而趋附同类。气同则合，声应则鸣。一张琴上弹出宫声或商声，另一件弦乐器上相应的宫声或商声便会应和。
+\end{zhblock}
+
+\begin{enblock}
+For Tung Chung-shu, causation was special and selective, acting in a stratified pattern rather than at random. The regularity of natural processes was conceived not as government by law, but as mutual adaptation to community life: a kind of mutual courtesy rather than strife among powers and processes.
+\end{enblock}
+\begin{zhblock}
+对董仲舒而言，因果关系是特殊而有选择性的，它以分层图式起作用，而非随机发生。自然过程的规律性不是被设想为法则的统治，而是对共同体生活的相互适应：在无生命的力量和过程中，也有一种相互礼让，而非斗争。
+\end{zhblock}
+
+\begin{enblock}
+If this expresses something deeply true about the Chinese world-picture, the fivefold correlations are an abstract chart of the whole thought-system. In true primitive thought anything may cause anything else; but once things are categorized in the fivefold system, anything can no longer be the cause of anything else.
+\end{enblock}
+\begin{zhblock}
+如果这确实表达了中国世界图景中的深层真实，那么五分相关就是整个思想体系的一张抽象图表。在真正的原始思维中，任何事物都可能成为任何其他事物的原因；但一旦事物被纳入五分系统，任何事物便不再能够随意成为任何其他事物的原因。
+\end{zhblock}
+
+\begin{enblock}
+Needham concludes that there are two ways of advancing from primitive truth. One, taken by some Greeks, refined causation toward a mechanical explanation of the universe, as in Democritus's atoms. The other systematized the universe of things and events into a structural pattern that conditioned mutual influences. In the Greek view, a particle was where it was because another particle pushed it there. In the other view, its behaviour was governed by its place in a field of force alongside similarly responsive particles; causation was environmental rather than mechanical.
+\end{enblock}
+\begin{zhblock}
+李约瑟由此得出结论：从原始真理出发可以有两条进路。一条为若干希腊人所取，把因果观念精炼为宇宙的机械解释，如德谟克利特的原子论。另一条则把事物与事件的宇宙系统化为一种结构图式，由它制约各部分的相互影响。在希腊图景中，一个质点在某时某地，是因为另一个质点把它推到那里；在另一种图景中，它的行为由它在力场中的位置所支配，并与同样有反应能力的其他质点并列；这里的因果不是机械性的，而是环境性的。
+\end{zhblock}
+
+\begin{enblock}
+The Democritean approach may have been necessary for modern science, but that does not make the Chinese view mere superstition. Aristotle too spoke of like attracting like, like nourishing like, and like affecting like. Greek thought as a whole moved toward mechanical cause and effect; Chinese thought developed the organic concept. The Chinese universe was not ruled by a creator-lawgiver or by atomistic clashes, but by a harmony of wills, spontaneous and patterned.
+\end{enblock}
+\begin{zhblock}
+德谟克利特式进路也许是现代科学的必要前奏，但这并不意味着中国观点只是迷信。亚里士多德也曾说同类相吸、同类相养、同类相感。希腊思想总体上走向机械因果概念；中国思想则发展出有机体概念。中国的宇宙既不是由最高创造者兼立法者统治，也不是由原子的无情碰撞支配，而是由一种意志的和谐支配：自发而有图式。
+\end{zhblock}
+
+\begin{enblock}
+Numbers reveal the contrast between the traditional Chinese view and modern science. China produced much creditable mathematics, but its numerology, connected with associative thinking, contributed little scientific value. Needham argues that it also did little harm; even the most exaggerated numerical correlations had validity in their own way, playing a part in Chinese scientific thinking as European extravagances foreshadowed later conceptions of laws of nature.
+\end{enblock}
+\begin{zhblock}
+数字的使用清楚显示了传统中国观点与现代科学之间的对比。中国当然产生了许多优秀数学成果，但与相关性思维相连的数术似乎并未贡献多少科学价值。李约瑟同时认为，它也没有造成太大坏处；甚至最夸张的五行数字相关也以自己的方式具有有效性，并在中国科学思维发展中发挥了作用，正如欧洲某些荒诞做法也曾预示后来的自然法则概念。
+\end{zhblock}
+
+\begin{enblock}
+Time and space were also conceived differently. For ancient Chinese thinkers, time was divided into seasons and subdivisions, though it flowed in one direction and was not the cyclical recurrent time of Indian philosophy. Space was not abstractly uniform, but divided into south, north, east, west, and centre, each connected with time and with the Five Elements. This compartmented world resembled medieval Europe before Galileo and Newton extended geometrical space and gravitation to the whole cosmos.
+\end{enblock}
+\begin{zhblock}
+时间和空间也以不同方式被理解。对古代中国人来说，时间不是纯粹抽象量，而是分为不同季节及其细分；不过时间仍只向一个方向流动，中国并未采用印度哲学那种循环复归的时间观。空间也不是向各方向均匀延展的抽象物，而是分成南、北、东、西、中五方，每一方都与时间和五行相连。这个分隔化世界，很类似伽利略和牛顿把几何空间与万有引力推广到整个宇宙之前的中世纪欧洲。
+\end{zhblock}
+
+\begin{enblock}
+For ancient Chinese thinkers, things were connected rather than caused. Tung Chung-shu wrote that opposing things cannot both arise simultaneously: Yin and Yang move parallel but not along the same road; they meet and take turns as controller. The universe is a vast organism, with one component after another taking the lead while all parts cooperate in mutual service, which is perfect freedom.
+\end{enblock}
+\begin{zhblock}
+对古代中国思想家来说，事物之间更多是相连，而不是被造成。董仲舒说，自然常道是相反之物不能同时并兴：阴阳并行而不同路，相遇而轮流为主。宇宙是一个巨大的有机体，此时此地由这一部分领先，彼时彼地由另一部分领先，所有部分在相互服务中合作，而这正是完全的自由。
+\end{zhblock}
+
+\begin{enblock}
+In such a system, causality is less a chain of events than what a modern biologist might call the endocrine orchestra of mammals, where all glands are working but it is not easy to say which leads at any moment. Chinese thought was dominated by a concept of causality in which succession was subordinated to interdependence.
+\end{enblock}
+\begin{zhblock}
+在这样的系统中，因果性不像事件链条，而更像现代生物学家所谓哺乳动物的“内分泌乐队”：所有腺体都在工作，却不容易判断某一时刻究竟哪一项居于主导。中国思想中的因果观由这样一种观念支配：继起关系从属于相互依存关系。
+\end{zhblock}
+
+\gapnote{the source chunk then omits intervening material and resumes with Sivin's essay.}
+
+\section*{Nathan Sivin: Why the Scientific Revolution Did Not Take Place in China -- or Didn't It? / 席文：为什么科学革命没有在中国发生，或者说它没有发生吗？}
+
+\begin{enblock}
+This essay makes the case for two conclusions. First, why the Scientific Revolution did not take place in China is not a question that historical research can answer. It becomes useful mainly when one locates the fallacies that lead people to ask it. Second, by the criteria historians of science use, a scientific revolution did take place in China in the seventeenth century. It did not have the social consequences that we assume a scientific revolution will have. The most obvious conclusion is that those assumptions are mistaken.
+\end{enblock}
+\begin{zhblock}
+本文论证两个结论。第一，“为什么科学革命没有在中国发生”并不是历史研究能够回答的问题；只有当我们辨认出促使人们提出这个问题的种种谬误时，它才有用。第二，按照科学史家通常使用的标准，中国在十七世纪确实发生过一场科学革命。只是它并未产生我们通常设想科学革命必然带来的社会后果。最明显的结论是：那些设想本身有误。
+\end{zhblock}
+
+\begin{enblock}
+Anyone who has looked into the history of science, technology, and medicine over the last generation has known that all the great ancient civilizations had sophisticated traditions. The Chinese traditions are especially fascinating because they are fully recorded and were more independent of European influence than Islamic and Indian traditions. Beginning in the 1920s, Chinese and Japanese historians explained what the Chinese knew and did. In the 1950s Joseph Needham brought their work to educated readers in the West and encouraged further research. By now the study of China is one of the flourishing fields in the history of science.
+\end{enblock}
+\begin{zhblock}
+过去一代以来，凡研究科学、技术和医学史的人都知道，古代各大文明都有自身复杂精致的传统。中国传统尤其引人入胜，因为其记录极为丰富，并且相较伊斯兰和印度传统，更少受欧洲影响。自二十世纪二十年代起，中日历史学家开始说明中国人知道什么、做了什么。二十世纪五十年代，李约瑟把他们的工作介绍给西方受过教育的读者，并鼓励进一步研究。如今，中国科学史已成为科学史中最繁荣的领域之一。
+\end{zhblock}
+
+\begin{enblock}
+When people learn what scholars have uncovered, they usually wonder why the transition to modern science first happened where it did. Needham gave the classic formulation of the ``Scientific Revolution problem'' in 1969: Why did modern science, the mathematization of hypotheses about Nature with implications for advanced technology, rise meteorically only in the West at the time of Galileo? He added the question why Chinese civilization, from the first century B.C. to the fifteenth century A.D., was much more efficient than the West in applying natural knowledge to practical human needs.
+\end{enblock}
+\begin{zhblock}
+当人们了解研究者已经揭示的材料后，通常会追问：为什么通向现代科学的转变首先在它实际发生的地方发生？李约瑟在1969年给出了“科学革命问题”的经典表述：为什么现代科学，即把关于自然的假说数学化、并对高级技术具有全部含义的那种科学，只在伽利略时代的西方迅猛兴起？他还提出第二个问题：为什么从公元前一世纪到公元十五世纪，中国文明在把自然知识应用于人类实际需要方面远比西方有效？
+\end{zhblock}
+
+\begin{enblock}
+For much of that millennium and a half, European civilization was collapsing and then slowly recovering. If we want to explain European technological inferiority over fourteen centuries, we should look first at the western end of Eurasia, not the eastern. Even the claim of Chinese superiority is problematic, because the natural knowledge applied to human needs was not usually what we would call Chinese science.
+\end{enblock}
+\begin{zhblock}
+在这一千五百年的大部分时间里，欧洲文明先经历缓慢而普遍的崩塌，然后又更缓慢地恢复。若要解释欧洲长达十四个世纪的技术落后，我们应当首先考察欧亚大陆西端，而不是远东。即使“中国优越”的说法也有问题，因为被应用于人类需要的自然知识，通常并不是我们所谓的中国科学。
+\end{zhblock}
+
+\begin{enblock}
+Early technology did not succeed or fail according to how well it applied early science. In China, science was mainly practiced by members of a small educated class and transmitted in books. Technology was a matter of craft and manufacturing skills privately passed from artisans to children and apprentices. Most artisans could not read scientific books. They depended on practical and aesthetic knowledge that we can reconstruct only from artifacts and scattered literate testimony.
+\end{enblock}
+\begin{zhblock}
+早期技术的成败并不取决于它在多大程度上应用了早期科学。在中国，科学主要由少数受教育阶层从事，并以书籍传承。技术则是工艺与制造技能，由工匠私下传给子女和学徒。多数工匠读不了科学家的书，只能依赖自身的实践知识与审美知识；这些知识今天只能通过遗物和少量文人记载来重建。
+\end{zhblock}
+
+\begin{enblock}
+Comparing all scientific and engineering activity of one civilization with all that of another in a single generalization conceals more than it reveals. Only in modern times did these kinds of work become closely connected. A Chinese visitor to Europe before about 1400 would have found it technologically backward in many respects, but Chinese and European medicine before about 1850 may not have differed greatly in therapeutic effectiveness. Chinese mathematical astronomy by its last high point about 1300 never quite reached Ptolemy's predictive accuracy.
+\end{enblock}
+\begin{zhblock}
+把一个文明的全部科学和工程活动与另一文明的全部活动用一句概括来比较，遮蔽的东西多于揭示的东西。只有在现代，这些工作才变得紧密相连。约1400年前到访欧洲的中国人，会在许多方面发现欧洲技术落后；另一方面，约1850年前中欧医学实践在疗效上大概并无巨大差距。中国数理天文学在约1300年的最后高峰，也并未完全达到托勒密一千一百年前已经掌握的预报精度。
+\end{zhblock}
+
+\begin{enblock}
+Such comparisons tell us little about what we can learn from either culture. We do not stop studying European alchemy because Chinese alchemical literature is richer in chemical knowledge. What matters is that we can begin comparing several strong traditions of science and technology based on different ideas and social arrangements. Without such comparison we remain trapped in parochial viewpoints. Historians have more urgent work than proving that every other culture was inferior to the one they study.
+\end{enblock}
+\begin{zhblock}
+这类比较并不能告诉我们可从任何一方文化学到什么。我们不会因为中国炼丹文献包含更丰富的化学知识，就停止研究欧洲炼金术。重要的是，我们现在能够开始比较若干强大的科学技术传统，它们建立在不同观念和社会安排之上。没有这种比较，我们就会被困在狭隘视角中。历史学家的更紧迫工作，绝不是证明其他一切文化都低于自己专攻的文化。
+\end{zhblock}
+
+\begin{enblock}
+Shen Kua offers a clue to the character of early science in general. He is famous for discussing magnetic declination and movable type, applying permutations in traditional Chinese mathematics, proposing daily records of lunar and planetary positions, suggesting a purely solar calendar in East Asia, explaining land formation by silt deposition and erosion, and writing on medicine. He also contributed to archaeology, music, art criticism, literary criticism, economic theory, diplomacy, land reclamation, and political reform.
+\end{enblock}
+\begin{zhblock}
+沈括提供了理解早期科学一般性质的线索。他以诸多成就著称：讨论磁偏角和活字印刷，在传统中国数学中应用排列组合，建议每日记录月亮和行星位置，在东亚首先提出纯太阳历，解释淤积和侵蚀造成的陆地形成，并撰写医学著作。他还对考古、音乐、艺术批评、文学批评、经济理论、外交、治水垦田和政治改革都有贡献。
+\end{zhblock}
+
+\begin{enblock}
+Sivin studied Shen Kua to ask how traditional Chinese scientists explained to themselves what they were doing: how they understood nature, how they related to it as conscious individuals in society, and how the insights of various sciences fit together. Shen Kua seemed the obvious person to study because he was involved in so many fields.
+\end{enblock}
+\begin{zhblock}
+席文研究沈括，是为了追问传统中国科学家如何向自己解释其所作所为：他们如何理解自然，作为生活在社会中的自觉个体又如何与自然发生关系，各门科学的洞见如何结合为总体理解。沈括涉猎诸多领域，因此似乎是最合适的研究对象。
+\end{zhblock}
+
+\begin{enblock}
+The pattern that emerged was that there was no systematic connection among all the sciences in the minds of those who practiced them. They were not integrated under philosophy, as in European and Islamic schools and universities. China had sciences but no single ``science,'' no overarching conception or word for the sum of them.
+\end{enblock}
+\begin{zhblock}
+研究显示，在从事这些学问的人心中，各门科学之间并不存在系统联系。它们没有像欧洲和伊斯兰的学校、大学中那样，被哲学统摄起来。中国有诸多“科学”，却没有一个单一的“科学”概念，也没有一个总括它们的词。
+\end{zhblock}
+
+\begin{enblock}
+In Shen Kua's memoirs, physical and numerological aspects of astronomy, astrology, cosmology, and divination appear under ``regularities underlying the phenomena.'' Medicine, engineering, and mathematics appear under ``technical skills,'' alongside architecture and games. His chapter on ``strange occurrences'' includes plant fossils, a tornado, an experiment on rainbows, hearsay, and curiosities. What makes us think of Shen as a scientist was widely scattered through his own scheme of knowledge.
+\end{enblock}
+\begin{zhblock}
+在沈括的笔记分类中，天文学、星占、宇宙论和占卜中物理与数术的方面，被归入“象数”或“物理之常”一类；医学、工程和数学则归入“技艺”，与建筑和游戏并列。他的“异事”一章同时包含植物化石、龙卷风、彩虹实验、传闻和奇谈。我们今天视为沈括“科学家”特征的内容，在他自己的知识体系中分散得很广。
+\end{zhblock}
+
+\begin{enblock}
+Shen Kua's scheme cohered not at the level of science, but at a more general level. In his writing there are no clear boundaries between what fits the modern conception of science and what does not. That modern conception does not help us understand what Shen Kua was trying to do.
+\end{enblock}
+\begin{zhblock}
+沈括的知识图式并不是在“科学”层面上保持一致，而是在更一般的层面上相互贯通。在他的著作中，符合现代科学概念的材料与不符合者之间没有清晰边界。用现代科学概念去理解沈括的意图，反而会造成障碍。
+\end{zhblock}
+
+\begin{enblock}
+Shen lived in the late eleventh century, when social mobility was broadening the group that ruled China. Many new men were interested in practical affairs that earlier elites would have considered beneath them. Officials were expected to be competent and versatile; merit could be measured quantitatively in taxes collected, land reclaimed, and similar results. At leisure, members of Shen's group could indulge curiosity about anything, including technical matters once left to clerks or artisans.
+\end{enblock}
+\begin{zhblock}
+沈括活跃于十一世纪后半叶，当时社会流动正在扩大中国统治集团。许多新进士人关心早先贵族会认为低贱的实际事务。官员被期望既能干又多才；政绩可用税收、垦田等量化指标衡量。闲暇时，沈括所属的大群体可以以业余方式追索宇宙万物，包括过去只适合吏胥或工匠的技术问题。
+\end{zhblock}
+
+\begin{enblock}
+Only after Shen's lifetime did the amateur ideal settle again on philosophy, the arts, and literature, leaving earth and sky largely to technicians. In the eleventh century Shen was one of several polymaths whose scientific and technological interests emerged from official responsibilities. What connected his research interests were the diverse commitments of his civil service career.
+\end{enblock}
+\begin{zhblock}
+直到沈括之后，士人的业余博雅理想才再次集中于哲学、艺术和文学，把天地之学大体留给技术人员。十一世纪的沈括只是若干博学者之一，他们的科学和技术兴趣都与多样的官职责任有关。把沈括各项研究兴趣联系起来的，正是他仕宦生涯中异常多样的职责与承诺。
+\end{zhblock}
+
+\begin{enblock}
+Court astronomers, physicians, and alchemists had no reason to relate their arts to each other. Philosophers were not in a position to define a common discipline for all of them, as Aristotle and his successors had done in Europe. If anyone was going to seek common ground for the sciences in China, it was people like Shen Kua, who mastered many of them. But Shen connected his understanding in ways that did not directly link the fields of Chinese science and that intimately associated what we would call scientific with what we would call superstitious.
+\end{enblock}
+\begin{zhblock}
+宫廷历算家、医生、炼丹者没有理由把自己的技艺彼此联系。哲学家也无力像亚里士多德及其后继者在欧洲所做的那样，为它们界定共同学科。若有人会寻找中国各门科学的共同基础，那必然是沈括这样通晓多门学问的人。然而沈括组织理解的方式，并未直接把中国科学各领域相连，而且把今天所谓科学与所谓迷信紧密结合在一起。
+\end{zhblock}
+
+\begin{enblock}
+Sivin concludes that he failed to find the internal unity of Chinese science in Shen Kua's mind. Instead he learned the importance of relations between the sciences and other kinds of knowledge.
+\end{enblock}
+\begin{zhblock}
+席文因此说，他未能在沈括的心智中找到中国科学的内在统一性。作为补偿，他学到了另一问题的重要性：各门科学与其他知识类型之间的关系。
+\end{zhblock}
+
+\subsection*{Back to the Scientific Revolution Problem / 回到科学革命问题}
+
+\begin{enblock}
+The question ``Why didn't the Chinese beat Europeans to the Scientific Revolution?'' is one of the few public questions people ask about why something did not happen in history. It is like asking why your name did not appear on page 3 of today's newspaper. Historians do not build research programs around such questions because they have no direct answers. They translate into questions about what did happen elsewhere: under what circumstances did the Scientific Revolution take place in seventeenth- and eighteenth-century Western Europe?
+\end{enblock}
+\begin{zhblock}
+“为什么中国人没有抢在欧洲人之前完成科学革命？”是少数常被公开提出的、关于历史上某事为何没有发生的问题之一。它类似于问：为什么你的名字没有出现在今天报纸第三版？历史学家不会围绕这类问题建立研究计划，因为它们没有直接答案。它们只能转化为关于别处实际发生了什么的问题：科学革命是在怎样的条件下于十七、十八世纪的西欧发生的？
+\end{zhblock}
+
+\begin{enblock}
+People keep asking the China question because it is heuristic: it encourages exploration and gives order to thought. Heuristic questions are useful at the beginning of inquiry, but as we understand complex patterns they grow murky and lose interest compared with the emerging clarity of what did happen.
+\end{enblock}
+\begin{zhblock}
+人们之所以不断追问中国问题，是因为它有启发性：它鼓励探索，并为思考提供秩序。启发性问题在研究开端有用；但当我们逐渐理解复杂图式时，它们会变得含混，并且相较于“实际发生了什么”所呈现的清晰性而失去吸引力。
+\end{zhblock}
+
+\begin{enblock}
+The urgency of the Scientific Revolution problem rests on shaky Western assumptions. Above all, we assume that the Scientific Revolution is what everyone ought to have had. It is not clear that everyone wanted it before modern survival under violent change made it urgent. We know little about how Europeans originally came to want that revolution because historians have focused on how it took place.
+\end{enblock}
+\begin{zhblock}
+科学革命问题之所以显得迫切，是因为它依赖若干不稳固的西方假设。最重要的是，我们通常假定科学革命是每个文明都应当拥有的东西。然而在近代剧烈变动使其成为生存所需之前，并不清楚每个文明都曾想要它。我们对欧洲人最初如何在一个又一个国家中想要这场革命所知甚少，因为历史学家主要关注它如何发生。
+\end{zhblock}
+
+\begin{enblock}
+These assumptions often link to the faith that European civilization, especially in its current American form, was somehow in touch with reality in a way no other civilization could be, and that its wealth and power came from an intrinsic fitness to inherit the earth. Historical study suggests instead that Western privilege came from a head start in technological exploitation of nature and political exploitation of societies not technologically equipped to defend themselves.
+\end{enblock}
+\begin{zhblock}
+这些假设常常同一种信念相连：欧洲文明，尤其是其当代美国形态，以某种其他文明不可能具备的方式接触了现实；其财富和权力来自一种内在的、继承地球的适应性。历史研究并不支持这种看法。它更提示我们，西方的特权地位来自它在技术性开发自然和政治性剥削那些无技术能力自卫的社会方面取得了先发优势。
+\end{zhblock}
+
+\begin{enblock}
+Scientists also tend to believe that because science has rapidly become international, it transcends European historical and philosophical biases and is as universal, objective, and value-free as the Nature it studies. This common sense does not survive examination. Modern science remains too marked by the special circumstances of its European development to be considered universal in that strong sense.
+\end{enblock}
+\begin{zhblock}
+科学家还常相信：既然科学已经迅速国际化，它就超越了欧洲的历史和哲学偏见，并且像它所研究的自然一样普遍、客观、价值中立。这种常识经不起仔细检验。现代科学仍然深受其在欧洲发展时特殊情境的印记，不能在强意义上被视为普遍。
+\end{zhblock}
+
+\begin{enblock}
+Chinese science got along without dichotomies between mind and body, objective and subjective, even wave and particle. In the West, mind-body and objective-subjective distinctions were entrenched by Plato and carried into modern times by Galileo, Descartes, and others. They helped early modern scientists claim authority over the physical world by separating natural knowledge from the realm of the soul and established religion.
+\end{enblock}
+\begin{zhblock}
+中国科学并不依赖身心、客观与主观、甚至波与粒子之间的二分。在西方，身心和主客二分在柏拉图时代已根深蒂固，伽利略、笛卡尔等人又把它们带入近代。这些区分帮助早期现代科学家主张对物理世界的权威，因为纯粹自然知识被划离灵魂领域和既有宗教权威。
+\end{zhblock}
+
+\begin{enblock}
+Science and religion have long learned to coexist, but we still live with sharp distinctions of this kind. If they are European peculiarities and sources of trouble, why has modern science not discarded them? It is not simple to root them out. Until we do, we should admit a certain parochialism in the foundations of science. Mathematical equations may be universal, but the allocation of human effort among possibilities of natural knowledge is not.
+\end{enblock}
+\begin{zhblock}
+科学与宗教早已学会共存，但我们仍生活在这些尖锐区分之中。如果它们是欧洲特殊性，而且不断制造麻烦，为什么现代科学还没有摆脱它们？显然，连根拔除并不简单。在做到这一点之前，我们应当坦率承认科学基础中存在某种地方性。数学方程也许是普遍的，但人类把精力分配给哪些自然知识可能性，并不是普遍的。
+\end{zhblock}
+
+\begin{enblock}
+Science and technology have spread worldwide, but that has not made them universal in the sense of transcending European patterns of thought. Encounters between old and new ideas in many societies have often been resolved by social change and political legislation, with traditional ideas excluded as backward, superstitious, or fit only for lower classes. True universality would require modern technology to coexist with and serve cultural diversity rather than standardizing it out of existence.
+\end{enblock}
+\begin{zhblock}
+科学和技术已传播到全世界，但这并不意味着它们在超越欧洲思维模式的意义上成为普遍者。在许多社会中，新旧观念的相遇常常通过社会变革和政治立法来解决，传统观念则被以落后、迷信、倒退、只适合下层阶级等理由排除。真正的普遍性要求现代技术与文化多样性共存并服务于它，而不是把它标准化到消失。
+\end{zhblock}
+
+\begin{enblock}
+Modern science has attained verifiability, internal consistency, taxonomic grasp, precision, and predictive accuracy unmatched by earlier activities. But the rigor that makes these possible quickly disappears when a law or theory is translated from equations, matrices, or technical models into ordinary cultural discourse. Such translation into value-laden analogies and metaphors precedes all public discussion of science and much philosophical reflection.
+\end{enblock}
+\begin{zhblock}
+现代科学确已达到早期知识活动所不能及的可验证性、内在一致性、分类把握、精确说明和预测准确性。但一旦定律或理论从方程、范畴矩阵或严格技术模型转化为普通文化话语，使这些特征成为可能的严密性便迅速消失。这种转化为充满价值的类比和隐喻，是一切关于科学的公共讨论以及大部分哲学反思的前提。
+\end{zhblock}
+
+\begin{enblock}
+Beyond the narrow abstract realm of exactitude, values and subjective judgments shape every activity situated in society. Contemporary science in China and the United States differs in convictions about basic and applied research, relations to general culture, scientists' roles in defining programs, planning and support, social aims, professional status, politics and knowledge, and allocation of resources. Invariant equations matter, but so does the ubiquity of opposable thumbs. Words like international and universal are out of place when applied beyond the narrow technical realm.
+\end{enblock}
+\begin{zhblock}
+在精确性可能成立的狭窄抽象领域之外，价值和主观判断会进入社会中的每一项活动。当代中国和美国的科学活动，在基础与应用研究关系、科学与一般文化关系、科学家制定计划的角色、规划和资助程序、社会目标、职业组织与地位、政治观念与科学知识的联系、资源分配等方面，都有深刻差异。不变的方程固然是因素，但拇指对掌的普遍存在也是因素。只要讨论超出狭窄技术领域，“国际”与“普遍”这样的词就并不合适。
+\end{zhblock}
+
+\begin{enblock}
+Nor should we accept uncritically the idea that modern science is in every essential respect European in origin. Any account of early science is lopsided if it restricts itself to discoveries at the western end of Eurasia, ignores movement of ideas among civilizations, neglects what Europeans had learned by 1600 about Islamic, Indian, and Chinese science, or ignores the impact of exotic technologies and materials on European experience.
+\end{enblock}
+\begin{zhblock}
+同样，我们也不能不加批判地接受现代科学在一切本质方面都起源于欧洲的说法。任何早期科学史叙述，如果把自己局限于欧亚大陆西端的发现，忽视各文明之间观念的流动，未充分考虑1600年前欧洲人已经从伊斯兰、印度和中国科学中学到什么，或忽略异域技术和材料对欧洲经验的影响，就会在根本问题上偏斜误导。
+\end{zhblock}
+
+\subsection*{Fallacies of Historical Reasoning / 历史推理谬误}
+
+\begin{enblock}
+Growing awareness of ancient Chinese science and technology has produced many hypotheses about factors that inhibited modern science in China, or characteristics unique to the West that made a major scientific revolution possible. These often contain elementary fallacies of historical reasoning.
+\end{enblock}
+\begin{zhblock}
+随着人们越来越意识到古代中国科学技术的高水平，各种关于“中国何以阻碍现代科学演化”的因素，或“西方何以独具促成重大科学革命的特征”的假说纷纷出现。它们常常包含基本的历史推理谬误。
+\end{zhblock}
+
+\begin{enblock}
+For decades historians argued that Ch'ing thinkers took the world as observable, nominalistic fact, like Francis Bacon, but unlike Bacon did not develop a scientific methodology. They did not ask whether Bacon's method survived in contemporary science. Bacon's method was largely Scholastic in origin, concerned with taxonomies rather than theories of natural phenomena, and unconcerned with mathematical measurement. It was probably among the most sterile early modern attempts to define how physical science should proceed.
+\end{enblock}
+\begin{zhblock}
+几十年来，历史学家常说清代思想家像弗朗西斯·培根一样，把世界看作可观察的、唯名论式的事实；但与培根不同，他们没有发展出科学方法论。这些论者甚至没有追问培根的科学方法是否还保存在当代科学实践中。培根的方法很大程度上源自经院传统，关心分类而非自然现象理论，并且不关心数学测量。在近代早期各种试图界定物理科学应如何前进的方案中，它大概是最贫瘠的之一。
+\end{zhblock}
+
+\begin{enblock}
+This pattern faults the Chinese for not developing a method that later proved abortive in the West. Another example claims that late Warring States astronomers failed to develop a unified scientific system because they were not interested in applied technical sciences such as tools for cannon flight or navigation. This blames a civilization for lacking interests more than a millennium before cannon existed and ignores comparable European theorists whose lack of application did not prevent later mechanics.
+\end{enblock}
+\begin{zhblock}
+这种思路责备中国人没有发展出一种后来在西方证明并无结果的方法。另一例认为，战国晚期的中国天文学家未能发展统一科学体系，是因为他们不关心可用于控制炮弹飞行或航海的应用技术科学。这实际上在火炮出现一千多年前责备一个文明缺乏相关兴趣，同时忽略欧洲冲力理论家同样缺乏应用兴趣却并未阻止后来的力学发展。
+\end{zhblock}
+
+\begin{enblock}
+The general fallacy is to claim that if an important aspect of the European Scientific Revolution is absent in another civilization, the whole set of changes could not have happened there. This rests on the arbitrary, usually unspoken assumption that the circumstance is a necessary condition. But if we trace the prehistory of the actual Scientific Revolution far enough back, the same circumstance is often absent in Europe too. On what grounds, then, is it necessary?
+\end{enblock}
+\begin{zhblock}
+一般说来，这种谬误就是声称：如果欧洲科学革命的某个重要方面在另一文明中不存在，那么那整组根本变化就不可能在那里发生。其基础是一个任意而通常未明说的假设：这个因素是必要条件。可是如果把实际科学革命的史前史向前追溯得足够远，在多数情况下也能找到欧洲尚不具备这个因素的时点。那么，它凭什么被视为必要条件？
+\end{zhblock}
+
+\begin{enblock}
+The mirror image appears in estimates of the Book of Changes as a deterrent to science. Needham once wrote that while Five-Element and Yin-Yang theories favoured scientific thought in China, the elaborate symbolic system of the Book of Changes was a mischievous handicap, tempting those interested in Nature to rest in explanations that were no explanations at all. Later scholars similarly called it an inhibiting factor.
+\end{enblock}
+\begin{zhblock}
+这个谬误的镜像，见于把《周易》视为科学阻碍的评价。李约瑟曾写道，五行和阴阳理论对中国科学思维有利而非有害，但《易经》精巧的象征系统几乎从一开始就是有害障碍，引诱关心自然的人停留在根本不是解释的解释上。后来学者也常把它称为抑制因素。
+\end{zhblock}
+
+\begin{enblock}
+But natural philosophers often used the Book of Changes to build dynamic explanations of change, not merely static classifications. If one cannot show that Chinese scientists were steadily moving toward mathematical formulations and experimental verification, and if there is no evidence that without the Book of Changes they would have gone further, there is no warrant for calling it inhibition.
+\end{enblock}
+\begin{zhblock}
+可是自然哲学家常用《易》建构关于变化的动态解释，而不只是静态分类。若不能证明早期中国科学家正在稳定走向数学公式化与实验验证，也没有具体证据说明没有《易》他们就会“更进一步”，那么就没有理由把《易》称为“抑制”。
+\end{zhblock}
+
+\begin{enblock}
+The same confusion appears when scholars call the scholar-bureaucrat class an inhibiting factor: bookish, past-oriented, and focused on human institutions rather than Nature. But at the onset of the European Scientific Revolution, universities were dominated by Schoolmen and dons who were also bookish, past-oriented, and focused on human institutions. They did not prevent the great changes in Europe.
+\end{enblock}
+\begin{zhblock}
+同样的混乱也出现于把士大夫官僚阶层称为“抑制因素”时：他们沉浸于书本，面向过去，关注人类制度而非自然。可是欧洲科学革命开始时，大学中占支配地位的是经院学者和学院教师，他们同样沉浸于书本，面向过去，关注人类制度。他们并没有阻止席卷欧洲的重大变化。
+\end{zhblock}
+
+\begin{enblock}
+One might as well call Euclidean geometry an inhibiting factor for non-Euclidean geometry, since people satisfied with it did not move to the next step. But can we argue that non-Euclidean geometry would have developed sooner without Euclid? It is unfortunate to dismiss the technical language of the Book of Changes as an obstacle before its dimensions have been understood.
+\end{enblock}
+\begin{zhblock}
+按这种逻辑，也可以把欧几里得几何称为非欧几里得几何发展的抑制因素，因为人们满足于前者时便没有走向下一步。但我们能说没有欧几里得，非欧几里得几何就会更早出现吗？在尚未理解《易》那套强有力地系统关联广泛人类经验的技术语言之前，就把它斥为障碍，是很可惜的。
+\end{zhblock}
+
+\begin{enblock}
+The first fallacy confuses a culture's earlier state, or its way of doing something, with a cause or necessary condition. The second confuses the absence of the later state with an inhibitor. Both confound continuity with stasis. They are bad history because they are bad reasoning.
+\end{enblock}
+\begin{zhblock}
+第一种谬误把一种文化的较早状态，或它做事的方式，误当成原因或必要条件。第二种谬误则把后来状态的缺失误当成抑制因素。二者都把连续性与停滞混为一谈。它们之所以是坏历史，是因为它们首先是坏推理。
+\end{zhblock}
+
+\begin{enblock}
+Together these fallacies turn the history of world science into a saga of Europe's success and everyone else's failure, until redemption through modernization. If Europe had the horse and buggy, fallacy one makes its absence in China proof that an automobile analogue was impossible. If China had something analogous, fallacy two makes it an inhibiting factor. Thus European abstraction can be read as a stage toward inertial guidance, while Chinese abstraction is read as proof that such guidance could never arise in East Asia.
+\end{enblock}
+\begin{zhblock}
+这两种谬误合用时，会把世界科学史变成欧洲成功、他者失败，直到现代化救赎降临的传奇。如果欧洲有马车，第一种谬误就会把中国没有马车读作汽车类似物不可能出现的证据；如果中国也有某种类似马车的东西，第二种谬误又会把它说成抑制因素。于是，欧洲抽象理论可被读作通向惯性制导的一阶段，而中国思想者同样不关心应用，则被读作东亚不可能产生这种技术的证据。
+\end{zhblock}
+
+\begin{enblock}
+This is an infallible formula for reading the strength of modern science into Europe's past alone. Other civilizations are tested only by anticipation of, or approximation to, early European or modern science. European science is exempt because it is assumed to have given birth to the Scientific Revolution. Other civilizations shine only as they reflect European light.
+\end{enblock}
+\begin{zhblock}
+这是一套万无一失的公式：把现代科学的力量读回历史过去，但只读回欧洲的过去。其他文明则只按其是否预示或接近早期欧洲科学或现代科学来检验。欧洲科学为什么无需检验？因为人们预设唯有它孕育了科学革命。于是其他文明只有在反射欧洲传统之光时才会发亮。
+\end{zhblock}
+
+\begin{enblock}
+Such assumptions are disastrous because they assure us there is no point in comprehending non-Western technical inquiries on their own terms. They have been accepted not only in Europe but to some extent wherever Chinese history is studied. Sivin cites Nishijima Sadao's analysis of the ``static character'' hypothesis: it served to validate the self-consciousness of modern Western Europe and, in Japan, shaped ways of viewing China through modernization and backwardness.
+\end{enblock}
+\begin{zhblock}
+这些假设是灾难性的，因为它们让我们确信没有必要按非西方技术探究自身的术语去理解它们。它们不仅在欧洲被接受，也在研究中国史的各国不同程度地被接受。席文引用西嶋定生对“中国社会停滞性”假说的分析：这一假说原本服务于确认现代西欧社会自我意识的价值；在日本，它也塑造了通过现代化与落后来观看中国的方式。
+\end{zhblock}
+
+\begin{enblock}
+One more fallacy appears when historians choose aspects of the European experience for comparison: the assumption that the evolution of science can be explained by intellectual factors alone, or socioeconomic factors alone. People who think of science as a quest for truth see China's failure as a failure of thought; those who see science as social or economic see the defeat as backwardness. Neither exclusive approach is adequate. The distinction between internal and external factors lies in historians' habits and division of labor, not in the events themselves.
+\end{enblock}
+\begin{zhblock}
+还有一种谬误，出现在历史学家选择欧洲经验的哪些方面来比较时：他们假定科学演化可以只用思想因素，或只用社会经济因素来解释。把科学主要视为追求自然真理的人，倾向于把中国未能先于英国进入现代科学看作思想失败；把科学主要视为社会或经济现象的人，则倾向于把这种失败看作社会经济落后。二者都不充分。内在因素与外在因素的区分，并不在被研究事件本身之中，而在历史学家的心智习惯、职业社群和劳动分工之中。
+\end{zhblock}
+
+\subsection*{Dimensions of the Scientific Revolution / 科学革命的维度}
+
+\begin{enblock}
+The Scientific Revolution and its consequences cut across historical specializations. Intellectually, it transformed knowledge of the external world: the questions asked, the means used, and the character of answers. It established for the first time the dominion of number and measure over every physical phenomenon.
+\end{enblock}
+\begin{zhblock}
+科学革命及其后果跨越了历史专业分工的边界。从思想维度看，它转变了人们关于外部世界的知识：改变了所提问题、探索手段和答案性质。它首次确立了数与量度对一切物理现象的支配。
+\end{zhblock}
+
+\begin{enblock}
+Ernst Gellner noted that the European Scientific Revolution was more than a new form of knowing. Earlier sciences asked several questions, not only ``is it true?'' but also whether it was beautiful, conventional, morally improving, led to the Good, or conformed to aesthetic patterns. Modern science displaced most of these with the test of truth, an appeal to public, verifiable, morally neutral fact. It created such facts for the first time: knowledge with no value except truth value.
+\end{enblock}
+\begin{zhblock}
+厄内斯特·盖尔纳指出，欧洲科学革命不仅是跃迁到一种新的认识形式。早期科学提出的不只是“它是真的吗？”还包括它是否美、是否合乎传统、是否有道德教化作用、是否通向善、是否符合真理应有的美学图式。现代科学以真理检验取代了其中大部分要求，诉诸原则上公共、可验证、道德中立的事实。它首次创造出这类事实：除真值之外不具其他价值的知识。
+\end{zhblock}
+
+\begin{enblock}
+Seventeenth-century China did not take the same leap. People there considered objective knowledge without wisdom, without moral or aesthetic significance, grotesque.
+\end{enblock}
+\begin{zhblock}
+十七世纪的中国没有完成同样的跃迁。中国人会认为没有智慧、没有道德或审美意义的客观知识是怪诞的。
+\end{zhblock}
+
+\begin{enblock}
+In Europe the Scientific Revolution also redefined natural philosophy's connections to other knowledge, man's orientation toward past and future, the authority determining uses of knowledge, what knowledge of nature was socially desirable, and how knowledge should relate to individuality and to active relations between man and nature.
+\end{enblock}
+\begin{zhblock}
+在欧洲，科学革命还重新定义了自然哲学与其他知识的关系，重新定义了人对过去和未来的取向，重新定义了何种权威应决定知识用途，何种自然知识在社会上可欲或不可欲，以及知识应如何关联人的个体性和人与自然的能动关系。
+\end{zhblock}
+
+\begin{enblock}
+Galileo and his allies could not overcome Church authority by ideas alone. But they were constructing a new intellectual community outside the old establishment. The Counter-Reformation made the Church defensive and obsessed with thought control, while new careers emerged, among them the profession of scientist. This profession did not provide salaried specialist careers until about 1800, but from the start its amateurs and devotees assumed independent authority to formulate laws of nature. Secular learning remade universities and displaced ancient institutions over several centuries.
+\end{enblock}
+\begin{zhblock}
+伽利略及其同道不能单靠观念绕过教会权威。但他们已经在旧建制之外建构新的知识共同体。反宗教改革使教会变得防御性强并沉迷于思想控制；与此同时，新职业开始出现，其中包括“科学家”这一职业。直到约1800年，这一职业才提供有薪专家生涯；但从一开始，它的业余者、信奉者和热心人就主张自己拥有制定自然法则的独立权威。世俗学问在数百年演化与革命中改造大学，并取代古老制度。
+\end{zhblock}
+
+\begin{enblock}
+This outline shows how much we miss if we look only at social factors or only at intellectual factors in China. Until recently, students of the topic, including Sivin, had overlooked an important part of the Chinese picture.
+\end{enblock}
+\begin{zhblock}
+这番概述说明，如果考察中国情形时只关注社会因素或只关注思想因素，我们会错过很多。直到不久以前，关心这一主题的人，包括席文本人，都忽略了中国图景中的一个重要部分。
+\end{zhblock}
+
+\subsection*{Scientific Revolution in China / 中国的科学革命}
+
+\begin{enblock}
+By conventional intellectual criteria, China had its own scientific revolution in the seventeenth century. Western mathematics and mathematical astronomy were introduced shortly after 1600, in a form that would soon become obsolete in parts of Europe where current knowledge was accessible. Chinese scholars quickly responded and reshaped astronomy. Geometry and trigonometry largely replaced traditional numerical or algebraic procedures; planetary rotation and relative distance from Earth became important; Chinese astronomers came to believe mathematical models could explain as well as predict phenomena. These changes amount to a conceptual revolution in astronomy.
+\end{enblock}
+\begin{zhblock}
+按通常的思想史标准，中国在十七世纪拥有自己的科学革命。1600年稍后，西方数学和数理天文学传入中国；这种形态在欧洲若干能够接触最新知识的地区不久便会过时。中国学者迅速回应，并重塑天文学实践。几何学和三角学在很大程度上取代了传统数值或代数程序；行星绝对旋转方向及其相对地球距离首次变得重要；中国天文学家开始相信数学模型不仅能预报现象，也能解释现象。这些变化构成了一场天文学概念革命。
+\end{zhblock}
+
+\begin{enblock}
+That revolution did not generate the same tension as Europe's. It did not produce as fundamental a reorientation of thought about Nature, did not cast doubt on all traditional ideas of astronomical problems, and did not narrow views of what astronomical prediction meant for understanding Nature and man's relation to it.
+\end{enblock}
+\begin{zhblock}
+这场革命没有产生与欧洲同时期革命同等强度的张力。它没有导致对自然思想同样根本的重新定向，没有使所有传统的天文学问题观念受到怀疑，也没有缩窄人们关于天文预报对理解自然及人与自然关系究竟意味着什么的看法。
+\end{zhblock}
+
+\begin{enblock}
+The most striking long-term outcome was a revival of traditional Chinese astronomy and a rediscovery of forgotten methods studied alongside new ideas, supporting a new classicism. Rather than replacing traditional values, the new values implicit in foreign astronomical writings were used to renovate traditional values.
+\end{enblock}
+\begin{zhblock}
+这场中西相遇最引人注目的长期结果，反而是传统中国天文学的复兴，以及被遗忘方法的重新发现；这些方法与新观念一起被研究，并支撑了一种新古典主义。外来天文学著作中隐含的新价值，并没有取代传统价值，而是被用来更新传统价值。
+\end{zhblock}
+
+\begin{enblock}
+Why did this conceptual revolution not have the social consequences historians of Western science expect? Old and new astronomy were not in antagonistic competition once Chinese scholars acknowledged that European techniques gave more reliable predictions. By the mid seventeenth century European civilization had little political or social impact in China, and astronomy made its way on its own merits.
+\end{enblock}
+\begin{zhblock}
+为什么这场概念革命没有产生西方科学史家预期的社会后果？一旦中国学者承认欧洲技术能给出可靠得多的预报，新旧天文学就并非处在敌对竞争中。到十七世纪中叶，欧洲文明在中国还没有明显政治或社会影响，天文学是凭自身优点进入中国的。
+\end{zhblock}
+
+\begin{enblock}
+The later rooting of Western astronomy in China may have been the last major face-to-face encounter between non-Western and European science in world history. By the eighteenth century modern science crossed boundaries on the coattails of empire, and competition among sciences, literatures, or religions on their merits became a thing of the past. Even in the mid seventeenth century, despite eclipse-prediction contests at the late Ming court, European computational techniques triumphed through an imperial decision to hand operational control of the Astronomical Bureau to Jesuit missionaries.
+\end{enblock}
+\begin{zhblock}
+西方天文学后来在中国扎根的过程，也许是世界史上非西方科学与欧洲科学最后一次重大的面对面相遇。到十八世纪，现代科学已借帝国势力跨越国界；不同科学、文学或宗教依据各自优点相互竞争，已经成为过去。即使在十七世纪中叶，尽管晚明宫廷上演了引人注目的日食预报竞赛，欧洲计算技术的胜利也不是通过伟大心灵的共识取得，而是通过皇帝决定把钦天监的实际运行控制权交给耶稣会士取得。
+\end{zhblock}
+
+\begin{enblock}
+Foreign techniques, however powerful, offered Chinese students no alternative route to security and fame. The civil service examination system left no room for one. The only astronomers who could respond to Jesuit writings were members of the old intellectual elite, who evaluated innovations in light of established ideals they felt responsible to strengthen and pass on.
+\end{enblock}
+\begin{zhblock}
+外来技术无论多么强大，都没有给中国学生提供通向安全和名望的替代道路。科举制度没有为此留下空间。能够回应耶稣会著作的天文学家，只有旧有知识精英成员；他们必然根据既有理想来评价创新，而这些理想正是他们自认为有责任加强并传给下一代的东西。
+\end{zhblock}
+
+\begin{enblock}
+Revolutions in science, like those in politics, take place at society's margins. But the people who made the seventeenth-century Chinese revolution were firmly attached to dominant cultural values. There were no students of astronomy motivated to cast off tradition, no alienated intellectual groups willing to follow ideas wherever they led even if society fell apart.
+\end{enblock}
+\begin{zhblock}
+科学革命和政治革命一样，常发生在社会边缘。但在十七世纪中国推动这场革命的人，却牢固依附于其文化的主导价值。当时没有天文学学生以摆脱传统价值为动机，也没有足够疏离的知识群体愿意追随观念走向任何地方，即使周围社会因此瓦解。
+\end{zhblock}
+
+\begin{enblock}
+The most influential first-generation champions of Western astronomy were lower Yangtze men who lived through the Manchu invasion of the 1640s. They adopted the loyalist role of refusing service to a new, non-Chinese dynasty. Having rejected conventional careers, they spent their lives studying and teaching new mathematics and astronomy while using them to master neglected techniques of their own tradition. They rejected the Ch'ing present not for a modernist future, but to keep alive the lost Ming cause for another generation.
+\end{enblock}
+\begin{zhblock}
+第一代最有影响力的西方天文学倡导者，是经历1640年代满洲入侵的江南人士。他们采取遗民角色，拒绝服务于他们眼中的非中国新王朝。既然拒绝在已经崩坏的社会中追求常规仕途，他们便把一生用于研究和教授新数学、新天文学，同时借此掌握本国传统中被忽视的技术。他们拒绝清代现实，并不是为了现代主义未来，而是为了让明代失落事业再延续一代。
+\end{zhblock}
+
+\begin{enblock}
+If we seek in China people for whom science was not a means to conservative ends, or for whom a proven fact outweighed values evolved over millennia, we do not find them until the late nineteenth century. By then foreigners exempt from Chinese law and backed by gunboats could create new institutions and careers that attracted talented young people with few other prospects. The old astronomy had nothing left to do. It became rare for modern scientists to know that their country had its own scientific tradition, until that awareness became general only in recent generations.
+\end{enblock}
+\begin{zhblock}
+如果我们要在中国寻找那些不把科学作为保守目的之手段的人，寻找那些认为一个已证事实重于数千年演化价值的人，那么直到十九世纪后期才找得到。那时，不受中国法律约束并有炮舰支持的外国人，已经可以在中国建立新制度和新职业路径，吸引别无前途的有才青年。此时不再能谈旧天文学与新天文学的相遇；社会政治变化已使旧者无事可为。随着时间推移，现代科学家很少知道本国曾有自己的科学传统；这种意识直到最近几代才重新普及。
+\end{zhblock}
+
+\subsection*{Conclusion / 结论}
+
+\begin{enblock}
+Sivin's frustrations in making sense of science in China arise partly from the many levels of human activity that must be encompassed over a vast sweep of time, and partly because the European Scientific Revolution itself calls for broader and deeper understanding than historians have often required. Once the many dimensions of scientific change and their complex relations are kept in mind, it becomes less surprising that the Scientific Revolution happened only when and where it did. The process resembles any historical evolution: a sum of human decisions and acts, some arbitrary and many wrongheaded. We need not appeal to fate, determinism, teleology, cultural superiority, inner logic, or a hidden World Spirit.
+\end{enblock}
+\begin{zhblock}
+席文说，他试图理解中国科学时的挫折，部分来自必须把漫长时间跨度中的许多人类活动层次纳入考察，部分来自欧洲科学革命本身也要求比其历史学家通常坚持的更宽更深的理解。一旦牢记科学变化的许多维度及其复杂关系，科学革命只在它实际发生的时间和地点发生，就不再那么令人惊讶。这个过程越来越像任何历史演化：许多人类决定和行动的总和，其中有些任意，许多糊涂。我们不必诉诸命运、决定论、目的论、文化优越性、不可抗拒展开的内在逻辑，或某种隐藏的世界精神。
+\end{zhblock}
+
+\begin{enblock}
+Looking at the two scientific revolutions--the familiar one in Europe and the unexpected one in seventeenth-century China--suggests that much remains to be learned about the specific circumstances of each before we can tell the world why it could not have happened elsewhere.
+\end{enblock}
+\begin{zhblock}
+同时考察这两场科学革命，一场是我们自以为熟悉的欧洲科学革命，另一场是十七世纪中国那场不符合我们预期的科学革命，会提示我们：在准备告诉世界它为什么不可能发生在其他时间或地点之前，我们还需要深入理解每一场革命的具体情境及其全部维度。
+\end{zhblock}
+
+\begin{enblock}
+Future breakthroughs in the study of Chinese science will concern the circumstances of the people who did science and technology: how technical ideas related to the rest of their thought; who formed scientific communities; what phenomena they considered problematic; what answers they considered legitimate; how communities related to society; how they were supported; how responsibilities to colleagues and to society were reconciled; and what larger ends the sciences served.
+\end{enblock}
+\begin{zhblock}
+中国科学研究未来的突破将属于另一种类型：它们将关乎从事科学技术的人们的具体情境。技术观念如何同他们思想的其他部分相关？科学共同体由谁构成？谁形成共识，认为某些现象成问题，某些答案合法？这些共同体如何与社会相连？如何获得支持？有知识者对科学同行的责任如何同对社会的责任调和？各门科学服务于哪些更大的目的，以至于其法则能与中国绘画法则和基本道德原则相一致？
+\end{zhblock}
+
+\begin{enblock}
+These issues remain poorly understood for both China and Europe. Comparative history of science will require much more study and reflection on both sides. By then, Sivin predicts, we will no longer ask why the transition to modern science did not first take place in China.
+\end{enblock}
+\begin{zhblock}
+无论就中国还是欧洲而言，我们对这些问题都了解甚少。比较科学史还需要双方更多研究和反思。席文预言，到那时，我们将不再追问为什么向现代科学的转变没有首先在中国发生。
+\end{zhblock}
+
+\subsection*{Appendix: Chapter Headings in Shen Kua, \emph{Brush Talks from Dream Brook} / 附录：沈括《梦溪笔谈》篇目}
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.12\linewidth}
+                  >{\raggedright\arraybackslash}p{0.58\linewidth}
+                  >{\raggedright\arraybackslash}p{0.18\linewidth}}
+\toprule
+No. & Heading / 篇目 & Item / 条目 \\
+\midrule
+1 & Ancient Usages / 古制 & 1\\
+3 & Philological Criticism / 辨证、校勘 & 42\\
+5 & Music and Mathematical Harmonics / 乐律与数理声学 & 82\\
+7 & Regularities Underlying the Phenomena / 象数、物理之常 & 116\\
+9 & Human Affairs / 人事 & 151\\
+11 & Civil Service / 官政 & 189\\
+13 & Wisdom in Emergencies / 权智 & 224\\
+14 & Literature / 文艺 & 245\\
+17 & Calligraphy and Painting / 书画 & 277\\
+18 & Technical Skills / 技艺 & 298\\
+20 & The Supernormal / 神奇 & 338\\
+21 & Strange Occurrences / 异事 & 357\\
+22 & Errors / 谬误 & 388\\
+23 & Wit and Satire / 讥谑 & 401\\
+24 & Miscellaneous / 杂志 & 420\\
+26 & Materia Medica / 药议 & 480\\
+\bottomrule
+\end{longtable}
+
+\begin{enblock}
+There are 507 jottings in Brush Talks from Dream Brook, or 609 including its two sequels. For a classification of the book's contents by field of knowledge, see Joseph Needham, \emph{Science and Civilisation in China}, volume 1, page 136.
+\end{enblock}
+\begin{zhblock}
+《梦溪笔谈》共有507则札记；若包括两种续编，则为609则。按知识领域对全书内容所作的分类，可参见李约瑟《中国科学技术史》第一卷第136页。
+\end{zhblock}
+
+\begin{figure}[htbp]
+\centering
+\preservedimage{ab8db89f822f852b2811695f7d04179e4928c24f1184703305320c6d28dbdfd8.jpg}
+\caption{Appendix image preserved from source chunk. / 保留原块中的附录图像。}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\preservedimage{39fb42c881e228e97ba0885f8316c52c8fc1fac4d2aab457bf7362ce851e1440.jpg}
+\caption{Appendix image preserved from source chunk. / 保留原块中的附录图像。}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\preservedimage{916233d2f39dd52cfca28f6dd4858c99111a70e4ad0a2e974036e9fc4873485b.jpg}
+\caption{Appendix image preserved from source chunk. / 保留原块中的附录图像。}
+\end{figure}
+
+\end{document}

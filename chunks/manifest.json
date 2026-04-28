@@ -1,0 +1,101 @@
+﻿[
+    {
+        "name":  "00_front_intro",
+        "title":  "Front Matter, Letter, Notes, Introduction, Part I intro",
+        "start":  1,
+        "end":  268,
+        "path":  "C:\\Users\\32133\\Documents\\Codex\\2026-04-27\\gpt-5-5-e-vlm-md\\chunks\\00_front_intro.md",
+        "lines":  268,
+        "chars":  20862
+    },
+    {
+        "name":  "01_plato_republic",
+        "title":  "Text 1a from Republic / Plato",
+        "start":  269,
+        "end":  414,
+        "path":  "C:\\Users\\32133\\Documents\\Codex\\2026-04-27\\gpt-5-5-e-vlm-md\\chunks\\01_plato_republic.md",
+        "lines":  146,
+        "chars":  9176
+    },
+    {
+        "name":  "02_lindberg_beginnings",
+        "title":  "Text 1b and Text 2 from The Beginnings of Western Science / David C. Lindberg",
+        "start":  415,
+        "end":  929,
+        "path":  "C:\\Users\\32133\\Documents\\Codex\\2026-04-27\\gpt-5-5-e-vlm-md\\chunks\\02_lindberg_beginnings.md",
+        "lines":  515,
+        "chars":  79538
+    },
+    {
+        "name":  "03_cohen_newton",
+        "title":  "Text 3a Birth of a New Physics and Text 3b Principia / Cohen and Newton",
+        "start":  930,
+        "end":  1235,
+        "path":  "C:\\Users\\32133\\Documents\\Codex\\2026-04-27\\gpt-5-5-e-vlm-md\\chunks\\03_cohen_newton.md",
+        "lines":  306,
+        "chars":  44543
+    },
+    {
+        "name":  "04_darwin",
+        "title":  "Part II intro and Text 4 On the Origin of Species / Darwin",
+        "start":  1236,
+        "end":  1480,
+        "path":  "C:\\Users\\32133\\Documents\\Codex\\2026-04-27\\gpt-5-5-e-vlm-md\\chunks\\04_darwin.md",
+        "lines":  245,
+        "chars":  60077
+    },
+    {
+        "name":  "05_watson_dna",
+        "title":  "Text 5 DNA: The Secret of Life / James D. Watson",
+        "start":  1481,
+        "end":  2363,
+        "path":  "C:\\Users\\32133\\Documents\\Codex\\2026-04-27\\gpt-5-5-e-vlm-md\\chunks\\05_watson_dna.md",
+        "lines":  883,
+        "chars":  101885
+    },
+    {
+        "name":  "06_carson",
+        "title":  "Text 6 Silent Spring / Rachel Carson",
+        "start":  2364,
+        "end":  2564,
+        "path":  "C:\\Users\\32133\\Documents\\Codex\\2026-04-27\\gpt-5-5-e-vlm-md\\chunks\\06_carson.md",
+        "lines":  201,
+        "chars":  42269
+    },
+    {
+        "name":  "07_poincare_kandel",
+        "title":  "Part III intro, Text 7 Science and Method / Poincare, Text 8 In Search of Memory / Kandel",
+        "start":  2565,
+        "end":  3102,
+        "path":  "C:\\Users\\32133\\Documents\\Codex\\2026-04-27\\gpt-5-5-e-vlm-md\\chunks\\07_poincare_kandel.md",
+        "lines":  538,
+        "chars":  83432
+    },
+    {
+        "name":  "08_needham_sivin",
+        "title":  "Text 9 Needham and Text 10a Nathan Sivin",
+        "start":  3103,
+        "end":  3647,
+        "path":  "C:\\Users\\32133\\Documents\\Codex\\2026-04-27\\gpt-5-5-e-vlm-md\\chunks\\08_needham_sivin.md",
+        "lines":  545,
+        "chars":  114053
+    },
+    {
+        "name":  "09_shen_brush_talks",
+        "title":  "Text 10b Brush Talks from Dream Brook / Shen Kua, Chinese and English",
+        "start":  3648,
+        "end":  3799,
+        "path":  "C:\\Users\\32133\\Documents\\Codex\\2026-04-27\\gpt-5-5-e-vlm-md\\chunks\\09_shen_brush_talks.md",
+        "lines":  152,
+        "chars":  17975
+    },
+    {
+        "name":  "10_dunham_euclid",
+        "title":  "Text 11a Mathematical Universe / Dunham and Text 11b Elements / Euclid",
+        "start":  3800,
+        "end":  4968,
+        "path":  "C:\\Users\\32133\\Documents\\Codex\\2026-04-27\\gpt-5-5-e-vlm-md\\chunks\\10_dunham_euclid.md",
+        "lines":  1169,
+        "chars":  43466
+    }
+]

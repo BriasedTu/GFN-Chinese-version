@@ -1,0 +1,23 @@
+# Processing Notes: `03_cohen_newton`
+
+- Scope kept to `chunks/03_cohen_newton.md`; no unrelated chunks were read.
+- Removed OCR page numbers and stray paragraph-leading page markers.
+- Removed the trailing false next-section material beginning with `Part II Human Exploration of the World of Life`, while preserving the three images immediately before it.
+- Repaired mojibake punctuation such as broken curly quotes/apostrophes and em dashes in the English text.
+- Repaired small OCR/scientific errors visible in the chunk:
+  - `F \propto l/D^2` corrected to `F \propto 1/D^2`.
+  - Lagrange's dates corrected from `1736-?813` to `1736--1813`.
+  - `DeMoivre` normalized to `De Moivre`.
+- Preserved all five image references as `\includegraphics` paths pointing to `chunks/images/...`.
+- Removed `natural_image` detail blocks from the LaTeX body; their function was descriptive OCR metadata rather than book text.
+- Preserved omission markers as centered `\ldots`.
+- Used mainstream Chinese terms consistently:
+  - inertia: `惯性`
+  - quantity of motion: `动量`
+  - mass / quantity of matter: `质量` / `物质的量（即质量）`
+  - centripetal force: `向心力`
+  - laws of motion: `运动定律`
+  - impressed force: `施加力`
+- The chunk mentions Newton's discussion of time and space only in passing; no excerpted definitions of absolute/relative/apparent/mathematical time were present in this chunk.
+- The footnote marker after `inertia` was preserved as `\textsuperscript{1}`, but no corresponding footnote text appears in the provided chunk.
+- The TeX file is a fragment, not a standalone document. It expects the parent document to provide Chinese-capable LaTeX support and `graphicx`.
